@@ -1,3 +1,3 @@
-# 420-XXX-LI-EM
+# 420-FBB-LI-EM
 
-Gabarit de notes de cours
+Notes du cours Initiation à la programmation
