@@ -211,6 +211,12 @@ Error message and password prompt
 
 <li>02.02 Formes de base</li>
 
+<li>02.03 Variables</li>
+
+<li>02.04 Décisions</li>
+
+<li>02.05 Boucles</li>
+
 <li>02.Exercices</li>
 
 <li>1.01 Accueil</li>
@@ -8905,10 +8911,10 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227210802649" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div created="20240227155256508" modified="20240228003837435" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
+<div created="20240227155256508" modified="20240304182944879" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
 <pre>close</pre>
 </div>
-<div created="20240227225042955" modified="20240228002555798" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
+<div created="20240227225042955" modified="20240304182946182" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
 <pre>close</pre>
 </div>
 <div list="Semainier" title="$:/StoryList">
@@ -8927,7 +8933,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -8947,7 +8953,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -8959,16 +8965,16 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;1707&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;2561&quot;
+            &quot;text&quot;: &quot;1067&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240227231000831" title="$:/temp/search">
+<div created="20210822182352824" modified="20240304182603205" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -9120,7 +9126,7 @@ exports.hljs = hljs;
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20240227154749048" modified="20240227234920729" tags="[[01 Concepts de base]]" title="01.01 La programmation">
+<div created="20240227154749048" modified="20240304182552484" tags="[[01 Concepts de base]]" title="01.01 La programmation">
 <pre>Selon [[Wikipédia|https://fr.wikipedia.org/wiki/Programmation_informatique]] (au 2 février 2021):
 
 &lt;&lt;&lt;
@@ -9136,6 +9142,31 @@ Donc, programmer, c'est écrire des instructions destinées à un ordinateur afi
 &lt;/p&gt;
 
 [img width=600 [https://ardas-it.com/uploads/images/blogs/giph.gif]]
+
+! Les intrants et les extrants
+
+Une façon très courante et pratique de conceptualiser les programmes informatiques est sous la forme d'intrants (//input//) et de sortants (//outpout//):
+
+[img width=&quot;900&quot; [https://i.imgur.com/hmAlTdJ.png]]
+
+Avant de commencer à écrire un programme, la première étape devrait donc toujours être de se demander:
+
+# ''Quels sont les intrants?''
+## Que va-t-on devoir fournir au programme comme données? Quels types (des nombres, du texte)?
+## Comment va-t-on passer les données au programme? Entrée clavier à l'invite du programme? Arguments? Par un fichier? Base de données?
+
+# ''Quels sont les extrants?''
+## Au final, que veut-on obtenir? Qu'est-ce qu'on veut?
+## Comment récupérer les extrants? Affichage à l'écran? Enregistrement dans un fichier? Transmission par réseau? Enregistrement dans une base de données?
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+Les intrants, ce sont des données que le programme ne possède pas au démarrage et qui lui sont fournies par une ou des sources externes; ainsi, les calculs intermédiaires produits par les traitements ne sont pas considérés comme des intrants puisque générés par le programme lui-même durant son exécution.
+
+La question est plus délicate lorsque des données sont obtenues directement du système sur lequel s'exécute le programme; p.ex., si un programme a besoin de la date du jour et, qu'au lieu de la demander à l'utilisateur, il l'obtient du système sur lequel il est en exécution: s'agit-il d'un intrant...? Selon certaines écoles de pensée, puisque la donnée n'est pas produite par le programme lui-même et qu'elle pourrait justement être demandée à l'utilisateur ou obtenue d'une autre source externe (comme un serveur NTP, p.ex.), il s'agit d'un intrant; mais pour d'autres, le système ne constitue pas une source externe et il ne s'agirait donc pas d'un intrant.
+
+''Dans ce cours, aux fins de simplification, dès qu'une donnée nécessaire au fonctionnement d'un programme ne sera pas produite par le programme lui-même durant son exécution, elle sera considérée comme un intrant.''
+&lt;/div&gt;
 
 ! Développement «tous niveaux» (//full stack//)
 
@@ -9348,19 +9379,69 @@ Dans un diagramme de flux, on nommera les étapes d'un algorithme à l'intérieu
 
 Il est possible de créer des diagrammes de flux avec une foule de logiciels payants ou gratuits. Tous les exemples de ce cours utiliseront [[yEd Live|https://www.yworks.com/yed-live/]], principalement avec la bibliothèque «Noeuds d'organigramme».</pre>
 </div>
-<div created="20240227221946565" modified="20240228001909399" tags="[[02 Diagrammes de flux]]" title="02.02 Formes de base">
+<div created="20240227221946565" modified="20240304153410284" tags="[[02 Diagrammes de flux]]" title="02.02 Formes de base">
 <pre>Voici quelques formes de base utilisées dans les organigrammes de programmes informatiques:
 
-| [img width=&quot;100&quot; [https://i.imgur.com/68EAUKQ.png]] |''Terminateur de début'': marque le début de l'algorithme; il ne peut y en avoir qu'un seul par organigramme. |
+| [img width=&quot;100&quot; [https://i.imgur.com/68EAUKQ.png]] |''Terminateur de début'': marque le début de l'algorithme; il ne peut y en avoir qu'un seul par organigramme. Donner un nom à l'algorithme est une bonne pratique à cet endroit. |
 | [img width=&quot;100&quot; [https://i.imgur.com/vN8VkwD.png]] |''Terminateur de fin'': marque la fin de l'agorithme; idéalement, on ne devrait en mettre qu'un seul par organigramme, mais il peut arriver qu'on en mette plusieurs à des fins d'allégement visuel si l'algorithme est complexe et que trop de chemins différents mènent à la fin de l'algorithme. |
 | [img with=&quot;100&quot; [https://i.imgur.com/54Uunm9.png]] |''Processus (opération, traitement, délai...)'': indique une étape où s'effectue un traitement, une opération ou un délai de type générique (p.ex., un calcul ou un stockage en mémoire). |
 | [img with=&quot;100&quot; [https://i.imgur.com/8X729sP.png]] |''Saisie manuelle'': indique une étape où un utilisateur doit saisir manuellement un intrant (p.ex., en tapant au clavier). |
 | [img width=&quot;100&quot; [https://i.imgur.com/KrzJFxq.png]] |''Affichage'': indique une opération d'affichage à l'écran. |
 
 !!! Exemple 2.2a
-[img width=&quot;300&quot; [https://i.imgur.com/aRPpGlW.png]]</pre>
+[img width=&quot;300&quot; [https://i.imgur.com/eXyuFjR.png]]</pre>
 </div>
-<div created="20240227235540346" modified="20240228003613981" tags="[[02 Diagrammes de flux]]" title="02.Exercices">
+<div created="20240304151644593" modified="20240304161441231" tags="[[02 Diagrammes de flux]]" title="02.03 Variables">
+<pre>Vous noterez l'utilisation de certains mots comme `plus_grand_n`, `annee_naissance`, `annee_courante` et `age` dans les organigrammes des sections [[01.03|01.03 L'algorithmie]] et [[02.02|02.02 Formes de base]]: ces mots sont utilisés comme ''variables'' afin de représenter des valeurs nécessaires à l'algorithme (comme une valeur saisie au clavier, une valeur tirée d'une base de données ou le résultat d'un calcul, p. ex.).
+
+On peut représenter les variables comme on veut dans un organigramme, tant que c'est clair. Un bon truc peut être de mettre les variables entre crochets (`[]`), ou encore de les mettre en majuscules. Lors d'un affichage, l'utilisation d'une marque particulière est importante pour distinguer le texte affiché de la valeur d'une variable (comme dans le `Vous avez [age] ans!` de l'[[exemple 2.2a|02.02 Formes de base]]).
+
+On appelle ''affectation'' le processus consistant à donner une valeur à une variable. Un symbole courant (mais non exclusif) pour représenter l'affectation est un deux-points suivi d'un égale `:=`.
+
+!!! Exemple 2.3a -- Affectation d'une valeur à la variable 'age'
+```
+[age] := [annee_courante] - [annee_naissance]
+```
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+Dans les formes de saisie manuelle d'un organigramme, le symbole d'affectation n'est pas nécessaire puisque l'affectation de la valeur saisie dans la variable est sous-entendue par la forme, comme ci-dessous où on affecte une valeur saisie à la variable `mot_de_passe`:&lt;br&gt;
+[img width=&quot;200&quot; [https://i.imgur.com/gkF83h4.png]]
+&lt;/div&gt;</pre>
+</div>
+<div created="20240304144804358" modified="20240304174252492" tags="[[02 Diagrammes de flux]]" title="02.04 Décisions">
+<pre>En algorithmie, il est souvent nécessaire de créer des embranchements logiques pour tenir compte de différentes possibilités. Ces embranchements ont pour point d'origine une ''décision'' (ou ''expression conditionnelle''), qu'on représente par un losange dans un organigramme:
+
+| [img width=&quot;100&quot; [https://i.imgur.com/vHbyHv5.png]] |''Décision'': inclut une question dont la réponse déterminera le chemin à suivre pour la suite de l'algorithme. |
+
+!!! Exemple 2.4a -- Algorithme pour affacer un fichier s'il dépasse une taille limite
+[img width=&quot;400&quot; [https://i.imgur.com/vnHyGmR.png]]
+
+On peut avoir plusieurs décisions dans un algorithme:
+
+!!! Exemple 2.4b -- Algorithme pour donner des droits d'accès
+[img width=&quot;800&quot; [https://i.imgur.com/ADdyNRS.png]]
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!! Bien qu'il soit permis d'avoir d'autres types de questions, il est plus fréquent et recommandé d'avoir des questions qui se répondent seulement par ''oui'' ou ''non'' dans des organigrammes, car elles sont davantage représentatives de la façon dont les programmes informatiques fonctionnent (&quot;//si cela est vrai, alors faire ceci; sinon, alors faire cela...//&quot;).
+&lt;/div&gt;</pre>
+</div>
+<div created="20240304161534974" modified="20240304163314962" tags="[[02 Diagrammes de flux]]" title="02.05 Boucles">
+<pre>Tel que déjà vu à la section [[01.03|01.03 L'algorithmie]], il arrive qu'on doive répéter une tâche plusieurs fois de suite: dans ce cas, on utilise une ''boucle'', représentée par deux formes superposées dans un organigramme:
+
+| [img width=&quot;100&quot; [https://i.imgur.com/9sHY9K6.png]] |''Début de boucle'': marque le début d'une boucle. On y inscrira les conditions de bouclage. |
+| [img width=&quot;100&quot; [https://i.imgur.com/VrcWMXr.png]] |''Fin de boucle'': marque la fin d'une boucle. On y inscrira les conditions de fin de boucle au besoin. |
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!! Notez que les formes de début et de fin de boucle s'utilisent comme un sandwich: on ne met pas de flèches immédiatement après la forme de début ni immédiatement avant la forme de fin.
+&lt;/div&gt;
+
+!!! Exemple 2.5a -- Algorithme de ménage d'un dossier
+[img width=&quot;500&quot; [https://i.imgur.com/YtOum6t.png]]</pre>
+</div>
+<div created="20240227235540346" modified="20240304182750411" tags="[[02 Diagrammes de flux]]" title="02.Exercices">
 <pre>//Utilisez [[yEd Live|https://www.yworks.com/yed-live/]] pour réaliser les exercices de cette section.//
 
 #  Sans avoir besoin de le comprendre, reproduisez le diagramme de flux de la [[section 01.03|01.03 L'algorithmie]].
@@ -9379,7 +9460,21 @@ Il est possible de créer des diagrammes de flux avec une foule de logiciels pay
 # En utilisant seulement les [[formes de base étudiées|02.02 Formes de base]], produisez un diagramme de flux représentant l'algorithme informatique suivant (il peut manquer des étapes que vous devrez ajouter dans l'organigramme, ou il peut être nécessaire de diviser certaines étapes données en plusieurs étapes dans l'organigramme):
 ## Demander et obtenir d'un usager l'adresse IP d'un ordinateur sur le réseau
 ## Obtenir l'état du service HTTPS à l'adresse IP indiquée
-## Afficher l'état du service HTTPS</pre>
+## Afficher l'état du service HTTPS
+
+# En utilisant toutes les formes pertinentes étudiées, produisez un diagramme de flux représentant l'algorithme informatique suivant (il peut manquer des étapes que vous devrez ajouter dans l'organigramme, ou il peut être nécessaire de diviser certaines étapes données en plusieurs étapes dans l'organigramme). ''Esssayez le plus possible d'éviter de dédoubler les chemins ou les étapes.''
+## Demander et recevoir un nom d'usager et mot de passe pour un système.
+## Si le nom d'usager est `root`, on affiche &quot;Accès interdit&quot; et on termine l'algorithme.
+## Si le mot de passe est invalide pour le nom d'usager saisi, on affiche &quot;Accès interdit&quot; et on termine l'algorithme.
+## Si le mot de passe est valide pour le nom d'usager saisi et que le nom d'usager appartient au groupe `admin`, l'accès est permis avec tous les privilèges.
+## Si le mot de passe est valide pour le nom d'usager saisi et que le nom d'usager appartient au groupe `usager`, l'accès est permis avec privilèges restreints.
+
+# En utilisant toutes les formes pertinentes étudiées, produisez pour chaque problème ci-dessous un organigramme d'algorithme informatique permettant de régler le problème.
+##  On a besoin de trouver le plus gros fichier d'un dossier donné sur un ordinateur.
+## À toutes les 5 min, on doit s'assurer que la mémoire vive (RAM) ne dépasse pas une limite donnée, sinon on doit afficher une alerte.
+## On doit trouver et effacer tous les fichiers d'un dossier donné qui sont plus vieux qu'une date donnée.
+
+# Pour chaque organigramme créé dans les numéros précédents, identifiez les intrants et les extrants.</pre>
 </div>
 <div created="20240227153244927" modified="20240227153257396" tags="[[01 Introduction]]" title="1.01 Accueil">
 <pre>* Mots de bienvenue
@@ -9413,8 +9508,122 @@ Il est possible de créer des diagrammes de flux avec une foule de logiciels pay
 
 * Notes de cours</pre>
 </div>
-<div bag="default" created="20181113131237544" modified="20240227190449804" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
-<pre></pre>
+<div bag="default" created="20181113131237544" modified="20240304161126558" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
+<pre>.boite {
+   background: #dddddd;
+   padding: 1em;
+   border: 2px solid darkblue;
+   border-radius: 10px;
+   margin: 2em;
+}
+
+ul.boite {
+  background: #dddddd;
+   padding: 1em 1em 1em 2em;
+   border: 2px solid darkblue;
+   border-radius: 10px;
+   margin: 2em;
+}
+
+.formule {
+   background: #ffffcc;
+   padding: 0.5em;
+   margin: 0.5em auto 0.5em auto;
+   text-align: center;
+   border: 1px dotted grey;
+   border-radius: 10px;
+   width: 60%;
+}
+
+.stop::before {
+   background-image: url('https://www.onlygfx.com/wp-content/uploads/2020/05/stop-stamp-1.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.important::before {
+   background-image: url('https://i.imgur.com/F4wNzDz.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.defi::before {
+   background-image: url('https://i.imgur.com/gCXeYiN.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.attention::before {
+   background-image: url('https://i.imgur.com/TGHe7KV.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.note::before {
+   background-image: url('https://i.imgur.com/GfxBmDf.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.notice {
+   color: darkgreen;
+   background-color: lightgreen;
+   font-weight: bolder;
+   font-size: 0.8em;
+   font-familiy: sans-serif;
+   border: 1px solid green;
+   border-radius: 5px;
+   padding: 0 5px;
+}
+
+/* Pour cacher dates */
+.tc-story-river .tc-subtitle {
+   display:none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+iframe {
+  vertical-align: top;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+img {
+  vertical-align: top;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+pre, code {
+    word-wrap: normal;
+    white-space: pre;
+}</pre>
 </div>
 <div created="20240227185604795" modified="20240227185628521" tags="" title="css codepen">
 <pre>[[Lien vers CSS sur CodePen|https://codepen.io/shrodi/pen/PoVoaKX]]</pre>
@@ -9460,9 +9669,10 @@ Il est possible de créer des diagrammes de flux avec une foule de logiciels pay
 &lt;/p&gt;
 \end</pre>
 </div>
-<div created="20231022185402519" modified="20240228003913473" tags="[[Table des matières]]" title="Semainier">
+<div created="20231022185402519" modified="20240304182914512" tags="[[Table des matières]]" title="Semainier">
 <pre>| Semaine | Sections à l'étude | À faire |h
-| 1 (28 fév.) |&lt;ul&gt;&lt;li&gt;[[01|01 Concepts de base]] au complet&lt;/li&gt;&lt;li&gt;[[02.01|02.01 Introduction]] et [[02.02|02.02 Formes de base]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Exercices [[1.1 à 1.7|01.Exercices]]&lt;/li&gt;&lt;li&gt;Exercices [[2.1 à 2.4|02.Exercices]]&lt;/li&gt;&lt;/ul&gt; |</pre>
+| 1 (28 fév.) |&lt;ul&gt;&lt;li&gt;[[01|01 Concepts de base]] au complet&lt;/li&gt;&lt;li&gt;[[02.01|02.01 Introduction]] et [[02.02|02.02 Formes de base]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[1.1 à 1.7|01.Exercices]]&lt;/li&gt;&lt;li&gt;Exercices [[2.1 à 2.4|02.Exercices]]&lt;/li&gt;&lt;/ul&gt; |
+| 2 (6 mar.) |&lt;ul&gt;&lt;li&gt;[[02.03 à 02.05|02 Diagrammes de flux]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[2.5 à 2.7|02.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 14 mars&lt;/li&gt;&lt;/ul&gt; |</pre>
 </div>
 <div bag="default" caption="Contenu" created="20181113130821883" list-before="$:/core/ui/SideBar/Open" modified="20240227154406539" revision="0" tags="$:/tags/SideBar" title="Table des matières" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
