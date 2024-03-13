@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>420-FBB-LI Initiation à la programmation (H2024) — Cégep Limoilou – Enseignant: Eric Martel</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-<link rel="stylesheet" href="https://shrodi.github.io/420-xxx-li-em/css/notes.css">
+<link rel="stylesheet" href="css/notes.css">
 
 </head>
 <body class="tc-body">
@@ -175,6 +175,10 @@ Error message and password prompt
 
 <li>$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811</li>
 
+<li>$:/state/toc/Table des matières-03 Programmation sans code-1329480811</li>
+
+<li>$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811</li>
+
 <li>$:/StoryList</li>
 
 <li>$:/temp/info-plugin</li>
@@ -219,6 +223,14 @@ Error message and password prompt
 
 <li>02.Exercices</li>
 
+<li>03 Programmation sans code</li>
+
+<li>03.01 Introduction</li>
+
+<li>03.02 Turtle!</li>
+
+<li>03.Exercices</li>
+
 <li>1.01 Accueil</li>
 
 <li>css</li>
@@ -228,6 +240,8 @@ Error message and password prompt
 <li>Glossaire</li>
 
 <li>HTML header</li>
+
+<li>Installer Turtle!</li>
 
 <li>macros</li>
 
@@ -8798,7 +8812,7 @@ Error message and password prompt
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;01.06 La documentation du code&quot;
+            &quot;text&quot;: &quot;https://i.imgur.com/mhz36zP.png&quot;
         }
     }
 }</pre>
@@ -8909,13 +8923,19 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227210802649" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div created="20240227155256508" modified="20240304233551340" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
+<div created="20240227155256508" modified="20240313004144711" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
 <pre>close</pre>
 </div>
-<div created="20240227225042955" modified="20240304233725077" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
+<div created="20240227225042955" modified="20240313004146665" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
 <pre>close</pre>
 </div>
-<div list="[[02.05 Boucles]] [[01.06 La programmation en réseautique]] Semainier" title="$:/StoryList">
+<div created="20240312145305089" modified="20240313004316592" title="$:/state/toc/Table des matières-03 Programmation sans code-1329480811">
+<pre>open</pre>
+</div>
+<div created="20240312145306540" modified="20240312221200919" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
+<pre>close</pre>
+</div>
+<div list="Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8972,7 +8992,7 @@ exports.hljs = hljs;
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240304232806082" title="$:/temp/search">
+<div created="20210822182352824" modified="20240312213456225" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -9124,7 +9144,7 @@ exports.hljs = hljs;
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20240227154749048" modified="20240304182552484" tags="[[01 Concepts de base]]" title="01.01 La programmation">
+<div created="20240227154749048" modified="20240312212633783" tags="[[01 Concepts de base]]" title="01.01 La programmation">
 <pre>Selon [[Wikipédia|https://fr.wikipedia.org/wiki/Programmation_informatique]] (au 2 février 2021):
 
 &lt;&lt;&lt;
@@ -9139,13 +9159,13 @@ La programmation représente donc ici la ''rédaction du code source d'un logici
 Donc, programmer, c'est écrire des instructions destinées à un ordinateur afin qu'il réalise les tâches souhaitées.
 &lt;/p&gt;
 
-[img width=600 [https://ardas-it.com/uploads/images/blogs/giph.gif]]
+[img width=600 [img/giph.gif]]
 
 ! Les intrants et les extrants
 
 Une façon très courante et pratique de conceptualiser les programmes informatiques est sous la forme d'intrants (//input//) et de sortants (//outpout//):
 
-[img width=&quot;900&quot; [https://i.imgur.com/hmAlTdJ.png]]
+[img width=&quot;900&quot; [img/intrants_extrants.png]]
 
 Avant de commencer à écrire un programme, la première étape devrait donc toujours être de se demander:
 
@@ -9169,7 +9189,7 @@ La question est plus délicate lorsque des données sont obtenues directement du
 ! Développement «tous niveaux» (//full stack//)
 
 La programmation ne constitue cependant qu'une étape d'un plus long processus qu'on apppelle le ''développement informatique'':
-[img[https://i.imgur.com/iIzzlvd.png]]
+[img[img/developpement.png]]
 
 Une fois le problème connu, il faut réaliser les étapes suivantes:
 
@@ -9183,7 +9203,7 @@ Une fois le problème connu, il faut réaliser les étapes suivantes:
 
 On appelle «développeur tous niveaux» (//full stack//) un développeur capable de réaliser à lui seul toutes les étapes d'un projet de développement du début à la fin. Tous les programmeurs ne sont pas nécessairement des déceloppeurs tous niveaux: certains se spécialiseront dans certaines étapes seulement.</pre>
 </div>
-<div created="20240227154939382" modified="20240227194204972" tags="[[01 Concepts de base]]" title="01.02 Les langages de programmation">
+<div created="20240227154939382" modified="20240312212757218" tags="[[01 Concepts de base]]" title="01.02 Les langages de programmation">
 <pre>Selon [[Wikipédia|https://fr.wikipedia.org/wiki/Langage_de_programmation]] (au 2 février 2021):
 
 &lt;&lt;&lt;
@@ -9192,8 +9212,9 @@ Un langage de programmation est une notation conventionnelle destinée à ''form
 
 ''&amp;rarr; [[Liste de langages|https://en.wikipedia.org/wiki/List_of_programming_languages]]''
 
-&lt;div class=&quot;boite&quot;&gt;
-Étant donné la très grande quantité de langages de programmation, il est impossible de les voir tous dans un programme d'étude en informatique; vous n'en verrez que quelques-uns, et il vous appartiendra, au fil de votre carrière, d'apprendre d'autres langages, par vous-mêmes ou par le biais de diverses formations.
+&lt;div class=&quot;boite important&quot;&gt;
+
+!! Étant donné la très grande quantité de langages de programmation, il est impossible de les voir tous dans un programme d'étude en informatique; vous n'en verrez que quelques-uns, et il vous appartiendra, au fil de votre carrière, d'apprendre d'autres langages, par vous-mêmes ou par le biais de diverses formations.
 &lt;/div&gt;
 
 Dans le présent cours, nous n'allons pas se concentrer sur un langage en particulier; nous utiliserons cependant succinctement les langages Python et PowerShell.
@@ -9202,7 +9223,7 @@ Dans le présent cours, nous n'allons pas se concentrer sur un langage en partic
 
 On dit souvent des langages de programmation qu'ils sont de ''haut ou de bas niveau''. On réfère ainsi à la «distance» à laquelle le langage se trouve par rapport au langage machine de l'ordinateur. Ainsi, le langage ''assembleur'', constitué de simples mnémoniques du langage machine, est le langage de programmation de plus bas niveau. On retrouve ensuite dans l'ordre, de manière générale, les[[ langages compilés|01.05 Compilation vs interprétation]], puis les [[langages interprétés|01.05 Compilation vs interprétation]]; à l'intérieur de ces deux dernières catégories, les [[langages POO|01.04 Les paradigmes de programmation]] sont en principe de plus haut niveau que les langages procéduraux simples.</pre>
 </div>
-<div created="20240227155339675" modified="20240227164544578" tags="[[01 Concepts de base]]" title="01.03 L'algorithmie">
+<div created="20240227155339675" modified="20240312213119298" tags="[[01 Concepts de base]]" title="01.03 L'algorithmie">
 <pre>Selon [[Wikipédia|https://fr.wikipedia.org/wiki/Algorithme]] (au 6 octobre 2023):
 
 &lt;&lt;&lt;
@@ -9231,7 +9252,7 @@ Afficher plus_grand_n;
 
 !!! Le même algorithme, sous forme de diagramme de flux:
 
-[img[https://i.imgur.com/k86fyjK.png]]
+[img[img/trouver_plus_grand_n.png]]
 
 
 !!! Implémentation de l'algorithme ci-dessus en Python
@@ -9253,7 +9274,7 @@ print(plusGrandN)
 
 &lt;/div&gt;
 
-[img width=1024 [https://m1.quebecormedia.com/emp/emp/MREG_2021_02_03_019ad3b8f4a-5dc0-44dc-8a6a-4144f880d312_ORIGINAL.jpg?impolicy=crop-resize&amp;x=0&amp;y=0&amp;w=0&amp;h=0&amp;width=3200]]
+[img width=1024 [img/sudoku_jdq.avif]]
 </pre>
 </div>
 <div created="20240227191141627" modified="20240227193401944" tags="[[01 Concepts de base]]" title="01.04 Les paradigmes de programmation">
@@ -9279,7 +9300,7 @@ Les principaux paradigmes de programmation, par ordre de complexité, sont:
 &lt;li&gt;Tous les langages de programmation ne supportent pas tous les paradigmes; ainsi, pour faire de la POO, il faut nécessairement utiliser un langage qui supporte ce paradigme (comme C++, Java, C#, Python, Ruby, etc.).&lt;/li&gt;
 &lt;/ul&gt;</pre>
 </div>
-<div created="20240227193601115" modified="20240227223625514" tags="[[01 Concepts de base]]" title="01.05 Compilation vs interprétation">
+<div created="20240227193601115" modified="20240312215457901" tags="[[01 Concepts de base]]" title="01.05 Compilation vs interprétation">
 <pre>Donc, ''programmer = écrire du code informatique dans un langage de programmation''.
 
 Mais un ordinateur ne comprend qu'un seul langage, soit le ''langage machine'', constitué uniquement de 0 et de 1. 
@@ -9296,12 +9317,19 @@ Selon le langage, ce «traducteur» peut être un ''compilateur'' ou un ''interp
 
 On appelle ''langages compilés'' les langages faisant appel à un compilateur (ex.: ''C/C++, Pascal''), et ''langages interprétés'' (ou ''scripts'') ceux faisant appel à un interpréteur (ex.: ''Javascript, Perl, Ruby, Python, PowerShell'').
 
-Les langages compilés ont pour avantage de générer des programmes exécutables plus rapidement, mais qui sont cependant spécifiques à des plateformes précises (un programme compilé pour Windows ne fonctionnera pas sous ~MacOS ou Linux et vice-versa).
+Les langages compilés ont pour avantage de générer des programmes exécutables plus rapidement, mais qui sont cependant spécifiques à des plateformes précises (un programme compilé pour Windows ne fonctionnera pas sous MacOS ou Linux et vice-versa), ce qui les rend plus difficiles à porter d'une plateforme à l'autre. Par contre, comme l'exécutable produit est en langage machine et que ce dernier est très difficile à retraduire en langage de haut niveau, la propriété intellectuelle du code original est protégée.
 
-Les langages interprétés quant à eux ont pour avantage de générer des programmes ''portables'' (c.-à-d. qui peuvent être exécutés sur n'importe quelle plateforme pour laquelle existe un interpréteur approprié), au prix cependant d'une baisse de performance. Les langages interprétés sont néanmoins généralement plus rapides à écrire que les langages compilés, car souvent de plus [[haut niveau|01.02 Les langages de programmation]].
+Les langages interprétés quant à eux ont pour pricipal avantage de générer des programmes ''portables'' (c.-à-d. qui peuvent être exécutés sur n'importe quelle plateforme pour laquelle existe un interpréteur approprié), au prix cependant d'une baisse de performance. Les langages interprétés sont néanmoins généralement plus rapides à écrire que les langages compilés, car souvent de plus [[haut niveau|01.02 Les langages de programmation]]. Cependant, le fait que le code source n'est pas traduit dans un fichier exécutable fait en sorte que pour distribuer le programme, on doit aussi distribuer le code source, de sorte que la propriété intellectuelle n'est pas protégée.
 
-Par contre, il existe des langages dits ''intermédiaires'' ou ''semi-compilés'' qui ont une étape de «prémâchage» du code (qui réduira et optimisera le code initial) pour un interpréteur; autrement dit, le programmeur écrit dans le langage de programmation, qu'il passe à un «compilateur» mais qui, au lieu de traduire en langage machine, va traduire dans un langage propre à un interpréteur. Donc, un fichier est produit, mais ce fichier, bien qu'illisible pour un humain, n'est pas un exécutable contenant du langage machine, mais plutôt un fichier contenant du langage optimisé pour un interpréteur. On crée ainsi un programme qui s'exécute plus rapidement qu'un programme interprété pur, tout en étant portable. Des exemples de ce type de langage sont le ''Java'' et le ''C#''.
+Par contre, il existe des langages dits ''intermédiaires'' ou ''semi-compilés'' qui ont une étape de «prémâchage» du code (qui réduira et optimisera le code initial) pour un interpréteur; autrement dit, le programmeur écrit dans le langage de programmation, qu'il passe à un «compilateur» mais qui, au lieu de traduire en langage machine, va traduire dans un langage propre à un interpréteur et illisble par un humain. Donc, un fichier est produit, mais ce fichier, bien qu'illisible pour un humain, n'est pas un exécutable contenant du langage machine, mais plutôt un fichier contenant du langage optimisé pour un interpréteur. On crée ainsi un programme qui s'exécute plus rapidement qu'un programme interprété pur, tout en étant portable, en plus de protéger la propriété intellectuelle. Des exemples de ce type de langage sont le ''Java'' et le ''C#''.
 
+!!! Tableau 1.5a -- Caractéristiques des divers types de langages
+|  | Langage compilé | Langage interprété | Semi-compilé |h
+| !Performance | ++ | - | + |
+| !Portabilité | - | ++ | ++ |
+| !Protection de la propriété intellectuelle | + | - | + |
+
+!!! Figure 1.5a -- Comparaison des étapes du code source à l'exécution d'un programme pour les différents types de langages
 [img width=1024 [https://i.imgur.com/mhz36zP.png]]</pre>
 </div>
 <div created="20240227222155861" modified="20240227224935879" tags="[[01 Concepts de base]]" title="01.06 La programmation en réseautique">
@@ -9377,19 +9405,19 @@ Dans un diagramme de flux, on nommera les étapes d'un algorithme à l'intérieu
 
 Il est possible de créer des diagrammes de flux avec une foule de logiciels payants ou gratuits. Tous les exemples de ce cours utiliseront [[yEd Live|https://www.yworks.com/yed-live/]], principalement avec la bibliothèque «Noeuds d'organigramme».</pre>
 </div>
-<div created="20240227221946565" modified="20240304153410284" tags="[[02 Diagrammes de flux]]" title="02.02 Formes de base">
+<div created="20240227221946565" modified="20240312220131627" tags="[[02 Diagrammes de flux]]" title="02.02 Formes de base">
 <pre>Voici quelques formes de base utilisées dans les organigrammes de programmes informatiques:
 
-| [img width=&quot;100&quot; [https://i.imgur.com/68EAUKQ.png]] |''Terminateur de début'': marque le début de l'algorithme; il ne peut y en avoir qu'un seul par organigramme. Donner un nom à l'algorithme est une bonne pratique à cet endroit. |
-| [img width=&quot;100&quot; [https://i.imgur.com/vN8VkwD.png]] |''Terminateur de fin'': marque la fin de l'agorithme; idéalement, on ne devrait en mettre qu'un seul par organigramme, mais il peut arriver qu'on en mette plusieurs à des fins d'allégement visuel si l'algorithme est complexe et que trop de chemins différents mènent à la fin de l'algorithme. |
-| [img with=&quot;100&quot; [https://i.imgur.com/54Uunm9.png]] |''Processus (opération, traitement, délai...)'': indique une étape où s'effectue un traitement, une opération ou un délai de type générique (p.ex., un calcul ou un stockage en mémoire). |
-| [img with=&quot;100&quot; [https://i.imgur.com/8X729sP.png]] |''Saisie manuelle'': indique une étape où un utilisateur doit saisir manuellement un intrant (p.ex., en tapant au clavier). |
-| [img width=&quot;100&quot; [https://i.imgur.com/KrzJFxq.png]] |''Affichage'': indique une opération d'affichage à l'écran. |
+| [img width=&quot;100&quot; [img/debut.png]] |''Terminateur de début'': marque le début de l'algorithme; il ne peut y en avoir qu'un seul par organigramme. Donner un nom à l'algorithme est une bonne pratique à cet endroit. |
+| [img width=&quot;100&quot; [img/fin.png]] |''Terminateur de fin'': marque la fin de l'agorithme; idéalement, on ne devrait en mettre qu'un seul par organigramme, mais il peut arriver qu'on en mette plusieurs à des fins d'allégement visuel si l'algorithme est complexe et que trop de chemins différents mènent à la fin de l'algorithme. |
+| [img with=&quot;100&quot; [img/processus.png]] |''Processus (opération, traitement, délai...)'': indique une étape où s'effectue un traitement, une opération ou un délai de type générique (p.ex., un calcul ou un stockage en mémoire). |
+| [img with=&quot;100&quot; [img/saisie.png]] |''Saisie manuelle'': indique une étape où un utilisateur doit saisir manuellement un intrant (p.ex., en tapant au clavier). |
+| [img width=&quot;100&quot; [img/affichage.png]] |''Affichage'': indique une opération d'affichage à l'écran. |
 
 !!! Exemple 2.2a
-[img width=&quot;300&quot; [https://i.imgur.com/eXyuFjR.png]]</pre>
+[img width=&quot;300&quot; [img/ex2.2a.png]]</pre>
 </div>
-<div created="20240304151644593" modified="20240304161441231" tags="[[02 Diagrammes de flux]]" title="02.03 Variables">
+<div created="20240304151644593" modified="20240312220224750" tags="[[02 Diagrammes de flux]]" title="02.03 Variables">
 <pre>Vous noterez l'utilisation de certains mots comme `plus_grand_n`, `annee_naissance`, `annee_courante` et `age` dans les organigrammes des sections [[01.03|01.03 L'algorithmie]] et [[02.02|02.02 Formes de base]]: ces mots sont utilisés comme ''variables'' afin de représenter des valeurs nécessaires à l'algorithme (comme une valeur saisie au clavier, une valeur tirée d'une base de données ou le résultat d'un calcul, p. ex.).
 
 On peut représenter les variables comme on veut dans un organigramme, tant que c'est clair. Un bon truc peut être de mettre les variables entre crochets (`[]`), ou encore de les mettre en majuscules. Lors d'un affichage, l'utilisation d'une marque particulière est importante pour distinguer le texte affiché de la valeur d'une variable (comme dans le `Vous avez [age] ans!` de l'[[exemple 2.2a|02.02 Formes de base]]).
@@ -9404,32 +9432,32 @@ On appelle ''affectation'' le processus consistant à donner une valeur à une v
 &lt;div class=&quot;boite note&quot;&gt;
 
 Dans les formes de saisie manuelle d'un organigramme, le symbole d'affectation n'est pas nécessaire puisque l'affectation de la valeur saisie dans la variable est sous-entendue par la forme, comme ci-dessous où on affecte une valeur saisie à la variable `mot_de_passe`:&lt;br&gt;
-[img width=&quot;200&quot; [https://i.imgur.com/gkF83h4.png]]
+[img width=&quot;200&quot; [img/saisie_mot_de_passe.png]]
 &lt;/div&gt;</pre>
 </div>
-<div created="20240304144804358" modified="20240304174252492" tags="[[02 Diagrammes de flux]]" title="02.04 Décisions">
+<div created="20240304144804358" modified="20240312220628841" tags="[[02 Diagrammes de flux]]" title="02.04 Décisions">
 <pre>En algorithmie, il est souvent nécessaire de créer des embranchements logiques pour tenir compte de différentes possibilités. Ces embranchements ont pour point d'origine une ''décision'' (ou ''expression conditionnelle''), qu'on représente par un losange dans un organigramme:
 
-| [img width=&quot;100&quot; [https://i.imgur.com/vHbyHv5.png]] |''Décision'': inclut une question dont la réponse déterminera le chemin à suivre pour la suite de l'algorithme. |
+| [img width=&quot;100&quot; [img/decision.png]] |''Décision'': inclut une question dont la réponse déterminera le chemin à suivre pour la suite de l'algorithme. |
 
 !!! Exemple 2.4a -- Algorithme pour affacer un fichier s'il dépasse une taille limite
-[img width=&quot;400&quot; [https://i.imgur.com/vnHyGmR.png]]
+[img width=&quot;400&quot; [img/ex2.4a.png]]
 
 On peut avoir plusieurs décisions dans un algorithme:
 
 !!! Exemple 2.4b -- Algorithme pour donner des droits d'accès
-[img width=&quot;800&quot; [https://i.imgur.com/ADdyNRS.png]]
+[img width=&quot;800&quot; [img/ex2.4b.png]]
 
 &lt;div class=&quot;boite note&quot;&gt;
 
 !! Bien qu'il soit permis d'avoir d'autres types de questions, il est plus fréquent et recommandé d'avoir des questions qui se répondent seulement par ''oui'' ou ''non'' dans des organigrammes, car elles sont davantage représentatives de la façon dont les programmes informatiques fonctionnent (&quot;//si cela est vrai, alors faire ceci; sinon, alors faire cela...//&quot;).
 &lt;/div&gt;</pre>
 </div>
-<div created="20240304161534974" modified="20240304163314962" tags="[[02 Diagrammes de flux]]" title="02.05 Boucles">
+<div created="20240304161534974" modified="20240312220922768" tags="[[02 Diagrammes de flux]]" title="02.05 Boucles">
 <pre>Tel que déjà vu à la section [[01.03|01.03 L'algorithmie]], il arrive qu'on doive répéter une tâche plusieurs fois de suite: dans ce cas, on utilise une ''boucle'', représentée par deux formes superposées dans un organigramme:
 
-| [img width=&quot;100&quot; [https://i.imgur.com/9sHY9K6.png]] |''Début de boucle'': marque le début d'une boucle. On y inscrira les conditions de bouclage. |
-| [img width=&quot;100&quot; [https://i.imgur.com/VrcWMXr.png]] |''Fin de boucle'': marque la fin d'une boucle. On y inscrira les conditions de fin de boucle au besoin. |
+| [img width=&quot;100&quot; [img/debut_boucle.png]] |''Début de boucle'': marque le début d'une boucle. On y inscrira les conditions de bouclage. |
+| [img width=&quot;100&quot; [img/fin_boucle.png]] |''Fin de boucle'': marque la fin d'une boucle. On y inscrira les conditions de fin de boucle au besoin. |
 
 &lt;div class=&quot;boite note&quot;&gt;
 
@@ -9437,7 +9465,7 @@ On peut avoir plusieurs décisions dans un algorithme:
 &lt;/div&gt;
 
 !!! Exemple 2.5a -- Algorithme de ménage d'un dossier
-[img width=&quot;500&quot; [https://i.imgur.com/YtOum6t.png]]</pre>
+[img width=&quot;500&quot; [img/ex2.5a.png]]</pre>
 </div>
 <div created="20240227235540346" modified="20240304182750411" tags="[[02 Diagrammes de flux]]" title="02.Exercices">
 <pre>//Utilisez [[yEd Live|https://www.yworks.com/yed-live/]] pour réaliser les exercices de cette section.//
@@ -9473,6 +9501,70 @@ On peut avoir plusieurs décisions dans un algorithme:
 ## On doit trouver et effacer tous les fichiers d'un dossier donné qui sont plus vieux qu'une date donnée.
 
 # Pour chaque organigramme créé dans les numéros précédents, identifiez les intrants et les extrants.</pre>
+</div>
+<div created="20240312132318458" modified="20240312132329474" tags="[[Table des matières]]" title="03 Programmation sans code">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;$macrocall $name=&quot;toc-selective-expandable&quot; tag=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+
+&lt;/div&gt;</pre>
+</div>
+<div created="20240312132338119" modified="20240312150811633" tags="[[03 Programmation sans code]]" title="03.01 Introduction">
+<pre>On appelle ''//programmation sans code//'' le fait de créer des programmes au moyen d'outils visuels, sans avoir besoin d'écrire concrètement du code.
+
+Il existe des dizaines de plateforme de développement sans code, des plus simples au plus complexes.
+
+Ces plateformes offrent certains ''avantages'':
+
+* elles offrent des courbes d'apprentissage beaucoup plus douces (plus faciles à apprendre et utiliser);
+* permettent de produire des applications beaucoup plus rapidement qu'en écrivant du code.
+
+Elles ont par contre des ''inconvénients''  incontestables qui les rendent souvent peu pratiques en l'espèce, notamment en réseautique:
+
+* généralement, elles offrent des fonctionnalités beaucoup plus limitées que ce que l'on pourrait obtenir avec du code;
+
+* ne produisent généralement pas de fichier compilable ou interprétable permettant d'avoir une application portable, déployable et exécutable sur les systèmes d'intérêt (écosystèmes de déploiement limité).
+
+Malgré leurs limites, elles peuvent s'avérer utiles pour créer des applications Web ou mobiles simples, dépanner, créer des preuves de concept ou encore ''servir à l'apprentissage et la pratique de l'algorithmie''.</pre>
+</div>
+<div created="20240312134029719" modified="20240313004644466" tags="[[03 Programmation sans code]]" title="03.02 Turtle!">
+<pre>Le logiciel ''Turtle!'' (disponible dans le [[magasin Microsoft|Installer Turtle!]]) est un petit programme très simple qui peut aider à mieux cerner et pratiquer les enjeux principaux de l'algorithmie, à savoir comment élaborer une recette pour obtenir un but recherché à l'aide de variables, de conditions et de boucles.
+
+Le programme met en jeu une petite tortue qui va dessiner des traits selon des instructions qu'on va lui donner. Ce qui est bien, c'est qu'//on n'a pas à écrire textuellement ces instructions//: l'interface nous fournit une liste d'instructions que l'on peut donner à la tortue, et il suffit de glisser-déposer les éléments souhaités de gauche à droite.
+
+!!! Figures 3.2a et 3.2b -- Écran d'accueil de Turtle! et le résultat quand on fait //Play//&lt;br&gt;[img width=800 [img\SpiralTurtle.png]][img width=300 [img/2024-03-12 18_58_25-Spiral ‎- Turtle!.png]]
+
+On peut faire faire toutes les figures que l'on veut à la tortue: il suffit de penser à toutes les étapes nécessaires. P.ex., pour tracer un carré, on peut simplement faire quatre fois «avancer une distance + tourner à 90°»:
+
+!!! Exemples 3.2a et 3.2b -- Tracer un carré avec Turtle! sans et avec variables&lt;br&gt;[img width=&quot;200&quot; [img/carré-Turtle.png]] [img width=300 [img/2024-03-12 18_31_00-carré ‎- Turtle!.png]] [img width=200 [img/2024-03-12 19_26_22-carré ‎- Turtle!.png]]
+
+
+&lt;p class=&quot;boite attention&quot;&gt;
+
+!!! Il est important de voir ''Turtle!'' non pas comme une fin en soi, mais bien comme un outil d'apprentissage et de pratique de l'algorithmie informatique. Nous allons l'utiliser comme tremplin intermédiaire vers la programmation codée.
+&lt;/p&gt;</pre>
+</div>
+<div created="20240312233317033" modified="20240313010548279" tags="[[03 Programmation sans code]]" title="03.Exercices">
+<pre>&lt;div class=&quot;boite important&quot;&gt;
+
+!! Il est important de ne pas chercher de solutions sur Internet ou par IA et de plutôt penser par soi-même comment résoudre les divers problèmes; au besoin, demandez de l'aide à votre enseignant.
+&lt;/div&gt;
+
+&lt;div class=&quot;formule&quot;&gt;
+
+!! Si ce n'est déjà fait, installez //Turtle!// sur votre poste de travail.
+&lt;/div&gt;
+
+# Ouvrez //Turtle!// et appuyez sur //Clear// pour effacer le contenu, puis reproduisez la Figure 3.2a (spirale).
+#&gt;//Le but ici étant d'apprendre à utiliser l'interface de //Turtle!//, il serait complètement inutile de prétendre réussir l'exercice en laissant simplement le logiciel nous «donner la réponse»...//
+
+# Avec //Turtle!//, et en utilisant le plus possible des variables, reproduire les figures suivantes (la taille n'est pas importante):
+## [img width=200 [img/2024-03-12 19_39_06-triangle ‎- Turtle!.png]]
+## [img width=200 [img/2024-03-12 19_50_49-hexagone ‎- Turtle!.png]]
+## [img width=200 [img/2024-03-12 19_54_48-dodécagone ‎- Turtle!.png]]
+## [img width=200 [img/2024-03-12 19_49_52-cercle‎- Turtle!.png]]
+## //Les pointes ci-dessous ont 40°.//&lt;br&gt;[img width=200 [img/2024-03-12 20_18_28-étoile ‎- Turtle!.png]]
+## //Les pointes ci-dessous ont 40°.//&lt;br&gt;[img width=200 [img/2024-03-12 20_34_41-étoile_coul ‎- Turtle!.png]]</pre>
 </div>
 <div created="20240227153244927" modified="20240227153257396" tags="[[01 Introduction]]" title="1.01 Accueil">
 <pre>* Mots de bienvenue
@@ -9519,8 +9611,17 @@ On peut avoir plusieurs décisions dans un algorithme:
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20231022185228316" modified="20240304232747288" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
-<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://shrodi.github.io/420-xxx-li-em/css/notes.css&quot;&gt;</pre>
+<div created="20231022185228316" modified="20240312213453195" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
+<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/notes.css&quot;&gt;</pre>
+</div>
+<div created="20240312134729392" modified="20240312134749397" tags="[[03.02 Turtle!]]" title="Installer Turtle!">
+<pre># [img [https://i.imgur.com/wfXCPV5.png]]
+
+# [img [https://i.imgur.com/rAXqiu0.png]]
+
+# [img [https://i.imgur.com/hi1Smph.png]]
+
+# [img [https://i.imgur.com/EPg0mlq.png]]</pre>
 </div>
 <div bag="default" created="20181113131129621" modified="20181113131210013" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
 <pre>\define test()
@@ -9550,10 +9651,11 @@ On peut avoir plusieurs décisions dans un algorithme:
 &lt;/p&gt;
 \end</pre>
 </div>
-<div created="20231022185402519" modified="20240304182914512" tags="[[Table des matières]]" title="Semainier">
+<div created="20231022185402519" modified="20240313011047384" tags="[[Table des matières]]" title="Semainier">
 <pre>| Semaine | Sections à l'étude | À faire |h
 | 1 (28 fév.) |&lt;ul&gt;&lt;li&gt;[[01|01 Concepts de base]] au complet&lt;/li&gt;&lt;li&gt;[[02.01|02.01 Introduction]] et [[02.02|02.02 Formes de base]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[1.1 à 1.7|01.Exercices]]&lt;/li&gt;&lt;li&gt;Exercices [[2.1 à 2.4|02.Exercices]]&lt;/li&gt;&lt;/ul&gt; |
-| 2 (6 mar.) |&lt;ul&gt;&lt;li&gt;[[02.03 à 02.05|02 Diagrammes de flux]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[2.5 à 2.7|02.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 14 mars&lt;/li&gt;&lt;/ul&gt; |</pre>
+| 2 (6 mar.) |&lt;ul&gt;&lt;li&gt;[[02.03 à 02.05|02 Diagrammes de flux]]&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[2.5 à 2.7|02.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 14 mars&lt;/li&gt;&lt;/ul&gt; |
+| 3 (13-14 mar.) |&lt;ul&gt;&lt;li&gt;[[03.01|03.01 Introduction]] et [[03.02|03.02 Turtle!]]&lt;/li&gt;&lt;li&gt;03.03 //(à venir)//&lt;/li&gt;&lt;/ul&gt;  |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[3.1 et 3.2|03.Exercices]]&lt;/li&gt;&lt;li&gt;//Autres exercices à venir//&lt;/li&gt;&lt;li&gt;''Quiz 14 mars, 11h30''&lt;/li&gt;&lt;/ul&gt; |</pre>
 </div>
 <div bag="default" caption="Contenu" created="20181113130821883" list-before="$:/core/ui/SideBar/Open" modified="20240227154406539" revision="0" tags="$:/tags/SideBar" title="Table des matières" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
