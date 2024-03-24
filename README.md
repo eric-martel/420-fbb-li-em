@@ -1,3 +1,3 @@
 # 420-FBB-LI-EM
 
-Notes du cours Initiation à la programmation
+[Notes du cours](/NotesDeCours.html) Initiation à la programmation
