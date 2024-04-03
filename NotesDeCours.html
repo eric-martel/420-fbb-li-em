@@ -247,7 +247,11 @@ Error message and password prompt
 
 <li>04.04 AlgoBox - Saisie et affichage</li>
 
-<li>04.Exercice</li>
+<li>04.05 AlgoBox - Expressions conditionnelles</li>
+
+<li>04.06 AlgoBox - Boucles</li>
+
+<li>04.Exercices</li>
 
 <li>css</li>
 
@@ -8922,7 +8926,7 @@ exports.hljs = hljs;
 <div created="20231022185455840" modified="20231022185455840" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20240227185346253" modified="20240320012304661" title="$:/state/sidebar">
+<div created="20240227185346253" modified="20240402232556762" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20231022184619780" modified="20231022184621872" title="$:/state/tab--868624678">
@@ -8937,13 +8941,13 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227210802649" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div created="20240227155256508" modified="20240319180054660" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
+<div created="20240227155256508" modified="20240403002337401" title="$:/state/toc/Table des matières-01 Concepts de base-1329480811">
 <pre>close</pre>
 </div>
-<div created="20240227225042955" modified="20240319155357086" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
+<div created="20240227225042955" modified="20240403002338409" title="$:/state/toc/Table des matières-02 Diagrammes de flux-1329480811">
 <pre>close</pre>
 </div>
-<div created="20240312145305089" modified="20240318173707752" title="$:/state/toc/Table des matières-03 Programmation sans code-1329480811">
+<div created="20240312145305089" modified="20240403002341649" title="$:/state/toc/Table des matières-03 Programmation sans code-1329480811">
 <pre>close</pre>
 </div>
 <div created="20240319161139081" modified="20240320012309351" title="$:/state/toc/Table des matières-04 Programmation en pseudocode-1329480811">
@@ -8952,10 +8956,10 @@ exports.hljs = hljs;
 <div created="20240319155402627" modified="20240319155402627" title="$:/state/toc/Table des matières-04 Programmation pseudocode-1329480811">
 <pre>open</pre>
 </div>
-<div created="20240312145306540" modified="20240313011315060" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
+<div created="20240312145306540" modified="20240403002339843" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
 <pre>close</pre>
 </div>
-<div list="04.Exercice Semainier" title="$:/StoryList">
+<div list="[[04 Programmation en pseudocode]] [[04.06 AlgoBox - Boucles]] [[04.04 AlgoBox - Saisie et affichage]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8971,7 +8975,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -8991,7 +8995,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9007,7 +9011,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;960&quot;
+            &quot;text&quot;: &quot;2561&quot;
         }
     }
 }</pre>
@@ -9243,7 +9247,7 @@ Dans le présent cours, nous n'allons pas se concentrer sur un langage en partic
 
 On dit souvent des langages de programmation qu'ils sont de ''haut ou de bas niveau''. On réfère ainsi à la «distance» à laquelle le langage se trouve par rapport au langage machine de l'ordinateur. Ainsi, le langage ''assembleur'', constitué de simples mnémoniques du langage machine, est le langage de programmation de plus bas niveau. On retrouve ensuite dans l'ordre, de manière générale, les[[ langages compilés|01.05 Compilation vs interprétation]], puis les [[langages interprétés|01.05 Compilation vs interprétation]]; à l'intérieur de ces deux dernières catégories, les [[langages POO|01.04 Les paradigmes de programmation]] sont en principe de plus haut niveau que les langages procéduraux simples.</pre>
 </div>
-<div created="20240227155339675" modified="20240318174114351" tags="[[01 Concepts de base]]" title="01.03 L'algorithmie">
+<div created="20240227155339675" modified="20240402225823408" tags="[[01 Concepts de base]]" title="01.03 L'algorithmie">
 <pre>Selon [[Wikipédia|https://fr.wikipedia.org/wiki/Algorithme]] (au 6 octobre 2023):
 
 &lt;&lt;&lt;
@@ -9256,7 +9260,7 @@ Un algortihme peut d'abord être écrit en ''pseudocode'', qui ne correspond à 
 
 De la même façon qu'une recette de cuisine peut être traduite dans plusieurs langues, il en va de même pour un algorithme qui peut être traduit (on dit ''implémenté'') dans plusieurs langages informatiques. 
 
-!!! Exemple de pseudocode pour trouver et afficher le plus grand nombre d'une liste d'entiers positifs:
+!!! Exemple 1.3a -- Pseudocode pour trouver et afficher le plus grand nombre d'une liste d'entiers positifs:
 
 ```
 liste := Liste(nombres entiers positifs);
@@ -9270,12 +9274,12 @@ Pour chaque nombre n dans liste, faire:
 Afficher plus_grand_n;
 ```
 
-!!! Le même algorithme, sous forme de diagramme de flux:
+!!! Exemple 1.3b -- Le même algorithme, sous forme de diagramme de flux:
 
 [img[img/trouver_plus_grand_n.png]]
 
 
-!!! Implémentation de l'algorithme ci-dessus en Python
+!!! Exemple 1.3c -- Implémentation de l'algorithme ci-dessus en Python
 ```python
 liste = [10, 55, 33, 30, 47, 21]
 
@@ -9736,7 +9740,120 @@ Et sinon dans AlgoBox il suffit de faire comme en 1. ci-dessus, mais en donnant 
 
 * On peut effectuer et afficher immédiatement un calcul avec le bouton `+ Ajouter AFFICHER calcul`. Il faut alors entrer le calcul désiré, lequel peut comprendre des variables numériques.</pre>
 </div>
-<div created="20240318182559092" list="" modified="20240320181531182" tags="[[04 Programmation en pseudocode]]" title="04.Exercice">
+<div created="20240402222950605" modified="20240402233135730" tags="[[04 Programmation en pseudocode]]" title="04.05 AlgoBox - Expressions conditionnelles">
+<pre>Les expressions conditionnelles sont des instructions qui ne seront exécutées qu'à condition qu'une certaine condition soit vraie. Elles correspondent aux [[décisions dans les diagrammes de flux|02.04 Décisions]].
+
+Ainsi, à l'[[exemple 1.3a|01.03 L'algorithmie]], l'instruction `plus_grand_n := n;` ne sera exécutée que si la condition `n &gt; plus_grand_n` est vraie; sinon, elle sera ignorée.
+
+!! If
+Typiquement, on introduit la condition d'une expression conditionnelle par le mot-clef quasi universel «`if`» (//si//, en français). La syntaxe exacte peut cependant considérablement varier d'un langage de programmation à l'autre.
+
+!! If/Else
+
+Un `if` seul est suffisant s'il n'y pas d'alternative, mais si on veut tester plusieurs conditions ''__mutuellement exclusives__'', alors on utilisera plutôt un `if/else` (si/sinon):
+
+```
+Si [condition], alors:
+   [instructions si condition est vraie]
+Sinon, alors:
+   [instructions si condition est fausse]
+```
+
+Il habituellement minimalement possible d'imbriquer les `if/else`:
+
+```
+Si [condition1], alors:
+   [instructions si condition1 est vraie]
+Sinon, alors:
+   Si [condition2], alors:
+      [instructions si condition2 est vraie]
+   Sinon, alors:
+      [instructions si condition2 (et donc aussi condition1) est fausse]
+```
+
+Mais plusieurs langages permettent d'ecnhaîner les `if/else` plus naturellement:
+
+```
+Si [condition1], alors:
+   [instructions si condition1 est vraie]
+Sinon, si [condition2], alors:
+   [instructions si condition2 est vraie]
+Sinon, alors:
+   [instructions si aucune condition n'est vraie]
+```
+
+!! AlgoBox
+
+Dans AlgoBox, on crée une expression conditionnelle avec le bouton `+ Ajouter SI...ALORS`:
+
+!!! Figure 4.5a -- SI...ALORS avec AlgoBox&lt;br&gt;[img width=600 [img/AlgoBox-Si...alors....png]]
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Les expressions conditionnelles sont souvent le premier écueil rencontré par certaines personnes qui étudient l'algorithmie, car elles demandent d'être en mesure de structurer sa pensée de manière à planifier les avenues possibles du déroulement d'un algorithme, ce qui n'est pas évident pour tous. ''La conception d'un flux de diagramme peut certainement aider à plus facilement atteindre cet objectif, car il permet de visualiser les chemins possibles.''
+&lt;/div&gt;</pre>
+</div>
+<div created="20240402232635350" modified="20240403000929940" tags="[[04 Programmation en pseudocode]]" title="04.06 AlgoBox - Boucles">
+<pre>Il existe deux grands types de boucles très répandus dans le monde de la programmation: les boucles de type `for` (//pour//) et les boucles de type `while` (//tant que//).
+
+!! Boucle `for`
+
+Une boucle `for` peut prendre différentes syntaxes selon les langages, mais son but général est d'exécuter un ensemble d'instructions un nombre déterminé (ou déterminable) de fois.
+
+Dans AlgoBox, on crée une boucle de ce type avec le bouton `+ Ajouter POUR...DE...A`, qui a la syntaxe `POUR [variable] ALLANT DE [valeur de départ] À [valeur de fin]`.
+
+!!! Exemple 4.6a -- Réécriture de la boucle de l'[[exemple 1.3a|01.03 L'algorithmie]] avec une syntaxe proche de celle d'AlgoBox
+```
+nombres := Liste(nombres entiers positifs);
+
+plus_grand_n := nombres[0];
+
+taille_liste := Taille(nombres);
+
+POUR i ALLANT DE 0 À taille_liste-1, FAIRE:
+   n := nombres[i];
+   si n &gt; plus_grand_n, alors:
+      plus_grand_n := n;
+
+Afficher plus_grand_n;
+```
+
+!! Boucle `while`
+
+La boucle `for` est extrêmement versatile et peut suffire, mais parfois il peut paraître plus naturel d'utiliser une boucle `while`, qui exécute un bloc d'instructions tant qu'une condition est vraie.
+
+Dans AlgoBox, on crée une boucle de ce type avec le bouton `+ Ajouter TANT QUE...`.
+
+!! Conversion entre types de boucles
+
+Il toujours possible de traduire un type de boucle en un autre type de boucle.
+
+!!! Exemple 4.6b -- Réécriture de la boucle de l'[[exemple 1.3a|01.03 L'algorithmie]] avec une boucle `while`
+```
+nombres := Liste(nombres entiers positifs);
+
+plus_grand_n := nombres[0];
+
+taille_liste := Taille(nombres);
+
+i := 0;
+
+TANT QUE i &lt; taille_liste, FAIRE:
+   n := nombres[i];
+   si n &gt; plus_grand_n, alors:
+      plus_grand_n := n;
+   i := i + 1;
+
+Afficher plus_grand_n;
+```
+
+&lt;div class=&quot;formule&quot;&gt;
+
+!!! Bien qu'on puisse toujours utiliser un type de boucle ou l'autre, la boucle ''for'' est mieux adaptée à une situation où on veut ou peut «compter» le nombre d'itérations, alors qu'une boucle ''while'' est mieux adaptée à une situation où on attend qu'une condition s'avère fausse pour arrêter.
+
+&lt;/div&gt;</pre>
+</div>
+<div created="20240318182559092" list="" modified="20240403002146352" tags="[[04 Programmation en pseudocode]]" title="04.Exercices">
 <pre># À partir de la [[page 1|https://www.xm1math.net/algobox/tutoalgobox/page1.html]]  du tutoriel Algobox:
 ## reproduisez l'Exemple 1;
 ## réalisez l'Activité 1 au bas de la page.
@@ -9761,7 +9878,13 @@ Et sinon dans AlgoBox il suffit de faire comme en 1. ci-dessus, mais en donnant 
 ## reproduisez l'exemple 5.1;
 ## reproduisez l'exemple 5.2;
 ## réalisez l'activité 5.
-</pre>
+
+# Dire si les situations suivantes suggèrent davantage une boucle de type ''for'' ou une boucle de type ''while'':
+## On veut programmer une génératrice pour qu'elle alimente un serveur seulement en absence de courant.
+## On veut envoyer un courriel à tous les employés d'une entreprise.
+## On veut scanner tous les ordinateurs d'un réseau.
+## On veut programmer un jeu qui demande après chaque partie si le joueur veut jouer une nouvelle partie.
+## On veut bloquer l'accès à un système après trois tentatives infructueuses de connexion.</pre>
 </div>
 <div bag="default" created="20181113131237544" modified="20240304230841747" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
 <pre></pre>
@@ -9813,12 +9936,14 @@ Et sinon dans AlgoBox il suffit de faire comme en 1. ci-dessus, mais en donnant 
 &lt;/p&gt;
 \end</pre>
 </div>
-<div created="20231022185402519" modified="20240320012236733" tags="[[Table des matières]]" title="Semainier">
+<div created="20231022185402519" modified="20240403002312234" tags="[[Table des matières]]" title="Semainier">
 <pre>| Semaine | Sections à l'étude | À faire |h
 | 1 (28 fév.) |&lt;ul&gt;&lt;li&gt;[[01|01 Concepts de base]] au complet&lt;/li&gt;&lt;li&gt;[[02.01|02.01 Introduction]] et [[02.02|02.02 Formes de base]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[1.1 à 1.7|01.Exercices]]&lt;/li&gt;&lt;li&gt;Exercices [[2.1 à 2.4|02.Exercices]]&lt;/li&gt;&lt;/ul&gt;|
 | 2 (6 mar.) |&lt;ul&gt;&lt;li&gt;[[02.03 à 02.05|02 Diagrammes de flux]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[2.5 à 2.7|02.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 14 mars&lt;/li&gt;&lt;/ul&gt;|
 | 3 (13-14 mar.) |&lt;ul&gt;&lt;li&gt;[[03.01|03.01 Introduction]] et [[03.02|03.02 Turtle!]]&lt;/li&gt;&lt;li&gt;[[03.03|03.03 Scratch]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[3.1 à 3.3|03.Exercices]]&lt;/li&gt;&lt;li&gt;Exercice [[3.4|03.Exercices]]&lt;/li&gt;&lt;li&gt;''Quiz 14 mars, 11h30''&lt;/li&gt;&lt;/ul&gt;|
-| 4 (20 mar.) |&lt;ul&gt;&lt;li&gt;[[04.01 à 04.04|04 Programmation en pseudocode]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;//Au minimum//, les exercices [[4.1 et 4.2|04.Exercice]], mais si possible essayer de faire jusqu'à 4.5&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 27 mars&lt;/li&gt;&lt;/ul&gt;|</pre>
+| 4 (20 mar.) |&lt;ul&gt;&lt;li&gt;[[04.01 à 04.04|04 Programmation en pseudocode]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;//Au minimum//, les exercices [[4.1 et 4.2|04.Exercices]], mais si possible essayer de faire jusqu'à 4.5&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 27 mars&lt;/li&gt;&lt;/ul&gt;|
+| 5 (27 mar.) | //Cours reportés// |&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;//Au minimum//, les exercices [[4.1 et 4.2|04.Exercices]], mais si possible essayer de faire jusqu'à 4.5&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 3 avril&lt;/li&gt;&lt;/ul&gt;|
+| 6 (3 avr.) |&lt;ul&gt;&lt;li&gt;[[04.05 et 04.06|04 Programmation en pseudocode]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[4.3 à 4.6|04.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour l'examen du 10 avril&lt;/li&gt;&lt;/ul&gt;|</pre>
 </div>
 <div bag="default" caption="Contenu" created="20181113130821883" list-before="$:/core/ui/SideBar/Open" modified="20240227154406539" revision="0" tags="$:/tags/SideBar" title="Table des matières" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
