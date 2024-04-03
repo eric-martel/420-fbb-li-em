@@ -8959,7 +8959,7 @@ exports.hljs = hljs;
 <div created="20240312145306540" modified="20240403002339843" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
 <pre>close</pre>
 </div>
-<div list="[[04.06 AlgoBox - Boucles]] Semainier" title="$:/StoryList">
+<div list="[[04.05 AlgoBox - Expressions conditionnelles]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9740,13 +9740,37 @@ Et sinon dans AlgoBox il suffit de faire comme en 1. ci-dessus, mais en donnant 
 
 * On peut effectuer et afficher immédiatement un calcul avec le bouton `+ Ajouter AFFICHER calcul`. Il faut alors entrer le calcul désiré, lequel peut comprendre des variables numériques.</pre>
 </div>
-<div created="20240402222950605" modified="20240402233135730" tags="[[04 Programmation en pseudocode]]" title="04.05 AlgoBox - Expressions conditionnelles">
+<div created="20240402222950605" modified="20240403161724828" tags="[[04 Programmation en pseudocode]]" title="04.05 AlgoBox - Expressions conditionnelles">
 <pre>Les expressions conditionnelles sont des instructions qui ne seront exécutées qu'à condition qu'une certaine condition soit vraie. Elles correspondent aux [[décisions dans les diagrammes de flux|02.04 Décisions]].
 
 Ainsi, à l'[[exemple 1.3a|01.03 L'algorithmie]], l'instruction `plus_grand_n := n;` ne sera exécutée que si la condition `n &gt; plus_grand_n` est vraie; sinon, elle sera ignorée.
 
 !! If
-Typiquement, on introduit la condition d'une expression conditionnelle par le mot-clef quasi universel «`if`» (//si//, en français). La syntaxe exacte peut cependant considérablement varier d'un langage de programmation à l'autre.
+Typiquement, on introduit la condition d'une expression conditionnelle par le mot-clef quasi universel «`if`» (//si//, en français).
+
+La syntaxe exacte peut considérablement varier d'un langage de programmation à l'autre, mais en général on aura quelque-chose qui ressemble à:
+
+```
+Si [condition], alors:
+   [instructions si condition est vraie]
+```
+
+Si la condition est fausse, les instructions conditionnelles seront alors simplement ignorées.
+
+Il est généralement possible d'imbriquer les `if`, comme ceci:
+
+```
+Si [condition1], alors:
+   Si [condition2], alors:
+      [instructions si condition1 et condition2 sont vraies]
+```
+
+Par contre, on préférera plutôt bâtir des conditions en utilisant des opérateurs booléens comme «ET» et «OU»:
+
+```
+Si [condition1 ET condition2], alors:
+   [instructions si condition1 et condition2 sont vraies]
+```
 
 !! If/Else
 
@@ -9790,7 +9814,7 @@ Dans AlgoBox, on crée une expression conditionnelle avec le bouton `+ Ajouter S
 
 &lt;div class=&quot;boite note&quot;&gt;
 
-!!! Les expressions conditionnelles sont souvent le premier écueil rencontré par certaines personnes qui étudient l'algorithmie, car elles demandent d'être en mesure de structurer sa pensée de manière à planifier les avenues possibles du déroulement d'un algorithme, ce qui n'est pas évident pour tous. ''La conception d'un flux de diagramme peut certainement aider à plus facilement atteindre cet objectif, car il permet de visualiser les chemins possibles.''
+!!! Les expressions conditionnelles sont souvent le premier écueil rencontré par certaines personnes qui étudient l'algorithmie, car elles demandent d'être en mesure de structurer sa pensée de manière à planifier les avenues possibles du déroulement d'un algorithme, ce qui n'est pas évident pour tous. ''La conception d'un diagramme de flux peut certainement aider à plus facilement atteindre cet objectif, car il permet de visualiser les chemins possibles.''
 &lt;/div&gt;</pre>
 </div>
 <div created="20240402232635350" modified="20240403102311290" tags="[[04 Programmation en pseudocode]]" title="04.06 AlgoBox - Boucles">
