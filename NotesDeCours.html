@@ -8986,7 +8986,7 @@ exports.hljs = hljs;
 <div created="20240312145306540" modified="20240403002339843" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
 <pre>close</pre>
 </div>
-<div list="[[05.03 Python - Affichage]] Semainier [[Carré de sable Python]]" title="$:/StoryList">
+<div list="[[05.02 Python - Variables]] [[05.03 Python - Affichage]] Semainier [[Carré de sable Python]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10004,7 +10004,7 @@ soit l'une au-dessus et l'autre en-dessous.
 &quot;&quot;&quot;
 ```</pre>
 </div>
-<div created="20240423165744416" modified="20240423185257727" tags="[[05 Python]]" title="05.02 Python - Variables">
+<div created="20240423165744416" modified="20240425144537444" tags="[[05 Python]]" title="05.02 Python - Variables">
 <pre>! Déclaration et types de variables
 
 Comme pour la plupart des langages interprétés, et contrairement à AlgoBox, il n'est pas nécessaire de déclarer formellement les variables avant de les affecter. De plus, Python est un langage ''faiblement typé'', au point où il n'est même pas nécessaire de donner un type aux variables: Python inférera les types d'après le contexte.
@@ -10048,7 +10048,34 @@ z = [&quot;pomme&quot;, &quot;banane&quot;, &quot;cerise&quot;]
 z[1] = &quot;poire&quot;  # Remplace &quot;banane&quot; par &quot;poire&quot;
 ```
 
-On reviendra sur les tableaux Python un peu plus loin.</pre>
+On reviendra sur les tableaux Python un peu plus loin.
+
+! Les noms de variables
+
+Un nom de variable Python doit obligatoirement suivre les règles suivantes:
+
+* ne doitr pas être un identifiant python existant;
+* ne doit pas contenir d'espace ni de caractère spécial ayant une signification en Python (comme `*`, `+`, `[`, etc.);
+* ne doit pas commencer par un chiffre.
+
+De plus, la [[convention Python|https://peps.python.org/pep-0008/#function-and-variable-names]] veut qu'on utilise le style //[[snake case|https://fr.wikipedia.org/wiki/Snake_case]]// pour nommer les variables, c'est-à-dire que:
+
+* un nom de variable ne contient que des minuscules;
+* on sépare les différents mots ou éléments du nom par un trait souligné (//underscore//), soit `_`.
+
+Exemples de noms de variables corrects:
+
+* age
+* age_usager1
+* date_naissance
+* date_naissance_usager1
+
+Par contre, voici des noms de variable incorrects selon les règles et conventions:
+
+* 1usager
+* Age
+* ageUsager
+* DateNaissance</pre>
 </div>
 <div created="20240423171453236" modified="20240425133825016" tags="[[05 Python]]" title="05.03 Python - Affichage">
 <pre>L'affichage de base avec Python se fait avec la fonction `print()`, qui ajoute un retour de ligne par défaut. Pour effectuer un affichage sans retour de ligne, on ajoute le paramètre `end=&quot;&quot;`. On peut aussi ajouter des retours de ligne avec des `\n` dans la chaîne ou encadrer un texte multiligne avec les même symboles que pour le texte de documentation (`&quot;&quot;&quot;`).
