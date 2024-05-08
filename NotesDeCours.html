@@ -9019,7 +9019,7 @@ exports.hljs = hljs;
 <div created="20240507134659752" modified="20240507134659752" title="$:/state/toc/Table des matières-05 Python--249536019">
 <pre>open</pre>
 </div>
-<div created="20240423165740676" modified="20240507221336169" title="$:/state/toc/Table des matières-05 Python-1329480811">
+<div created="20240423165740676" modified="20240508161927771" title="$:/state/toc/Table des matières-05 Python-1329480811">
 <pre>close</pre>
 </div>
 <div created="20240507134734599" modified="20240507134734599" title="$:/state/toc/Table des matières-06 PowerShell--249536019">
@@ -9037,7 +9037,7 @@ exports.hljs = hljs;
 <div created="20240430150446441" modified="20240507172806039" title="$:/state/toc/Table des matières/05 Python-05.06 Python - Boucles-1329480811">
 <pre>close</pre>
 </div>
-<div list="Semainier [[Carré de sable Python]] [[Carré de sable PowerShell]]" title="$:/StoryList">
+<div list="[[06.00 PowerShell - Développement avec VS Code]] Semainier [[Carré de sable Python]] [[Carré de sable PowerShell]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9053,7 +9053,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9073,7 +9073,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9085,16 +9085,16 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;2560&quot;
+            &quot;text&quot;: &quot;1440&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;960&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240507194028848" title="$:/temp/search">
+<div created="20210822182352824" modified="20240508130526954" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -10073,7 +10073,7 @@ soit l'une au-dessus et l'autre en-dessous.
 &quot;&quot;&quot;
 ```</pre>
 </div>
-<div created="20240423165744416" modified="20240507145957925" tags="[[05 Python]]" title="05.02 Python - Variables">
+<div created="20240423165744416" modified="20240508140209175" tags="[[05 Python]]" title="05.02 Python - Variables">
 <pre>! Déclaration et types de variables
 
 Comme pour la plupart des langages interprétés, et contrairement à AlgoBox, il n'est pas nécessaire de déclarer formellement les variables avant de les affecter. De plus, Python est un langage ''faiblement typé'', au point où il n'est même pas nécessaire de donner un type aux variables: Python inférera les types d'après le contexte.
@@ -10152,7 +10152,20 @@ Par contre, voici des noms de variable incorrects selon les règles et conventio
 * 1usager
 * Age
 * ageUsager
-* DateNaissance</pre>
+* DateNaissance
+
+&lt;div class=&quot;boite attention&quot;&gt;
+
+!!! Python est ''sensible à la casse'', c'est à dire qu'il fait la différence entre les minuscules et les majuscules. La conséquence concernant les noms de variables est que deux variables portant le même nom, mais avec une casse différente, ''seront vues comme deux variables différentes''.
+
+```python
+nombre = 10
+Nombre = 15
+
+print(nombre) # Affichera 10
+print(Nombre) # Affichera 15
+```
+&lt;/div&gt;</pre>
 </div>
 <div created="20240423171453236" modified="20240507165053750" tags="[[05 Python]]" title="05.03 Python - Affichage">
 <pre>L'affichage de base avec Python se fait avec la fonction `print()`, qui ajoute un retour de ligne par défaut. Pour effectuer un affichage sans retour de ligne, on ajoute le paramètre `end=&quot;&quot;`. On peut aussi ajouter des retours de ligne avec des `\n` dans la chaîne ou encadrer un texte multiligne avec les même symboles que pour le texte de documentation (`&quot;&quot;&quot;`).
@@ -10358,7 +10371,7 @@ VS Code est également déjà installé sur les postes des labos du cégep.
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20240507174514846" modified="20240507193641801" tags="[[06 PowerShell]]" title="06.00 PowerShell - Développement avec VS Code">
+<div created="20240507174514846" modified="20240508161925028" tags="[[06 PowerShell]]" title="06.00 PowerShell - Développement avec VS Code">
 <pre>Comme dit [[précédemment|06.01 PowerShell - Concepts de base]], on peut écrire du code informatique dans n'importe quel éditeur de texte simple, mais il est hautement préférable d'utiliser un éditeur qui inclut des fonctions d'aide au développement, notamment la mise en évidence de syntaxe (//syntax highlighting//) et la capacité d'exécuter facilement le code développé.
 
  Le logiciel //MS Visual Studio Code// (souvent abrégé //VS Code//) est un éditeur de développement très populaire. Les nombreux greffons (//plugins//) disponibles pour ce logiciel en font un véritable couteau suisse  du développement informatique, permettant de développer dans des dizaines de langages, incluant évidemment Python et Powershell. ''C'est l'éditeur que nous allons privilégier dans ce cours.''
@@ -10371,11 +10384,16 @@ Cependant, pour tout langage de programmation, [[comme vous le savez|01.05 Compi
 
 # Dans VS Code, cliquez sur «Extensions», cherchez «powershell» et cliquez pour installer l'extension de Microsoft:&lt;br&gt;[img width=600 [img/PS_VSC_install.png]]
 
-# Après l'installation, entrez «T» autant de fois que nécessaire dans le terminal du bas, fermez l'onglet «Welcome» et cliquez à nouveau sur l'icône des extensions pour fermer la volet des extensions:&lt;br&gt;[img width=800 [img/PS_VSC_apresInstall.png]]
+# Après l'installation, entrez «T» autant de fois que nécessaire dans le terminal du bas, fermez l'onglet «Welcome» et cliquez à nouveau sur l'icône des extensions pour fermer la volet des extensions:&lt;br&gt;[img width=800 [img/PS_VSC_apresInstall.png]]&lt;br&gt;&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Il est possible que vous ayez à entrer «T» plusieurs fois durant l'ensemble du processus, et pas nécessairement à l'endroit indiqué ci-dessus.
+&lt;/div&gt;
 
 # Créez un nouveau fichier:&lt;br&gt;[img width=400 [img/VScode_newfile.png]]
 
 # Cliquez sur «Select a language», puis cherchez et sélectionnez «powershell»:&lt;br&gt;[img width=600 [img/PS_VSC_selectLang.png]]
+
+# Pour éviter les problèmes d'encodage à l'affichage, réglez le jeu de caractères à «Windows 1252»:&lt;br&gt;[img width=600 [img/PS_VSC_charset.png]]
 
 # Entrez du code PowerShell, puis cliquez sur le symbole «Jouer» pour exécuter le code (entrez «T» à la console si demandé):&lt;br&gt;[img width=800 [img/PS_VSC_run.png]]
 
@@ -10435,7 +10453,7 @@ Les «fonctions» PowerShell sont appelées des ''cmdlets''. Ils sont générale
 
 Contrairement aux fonctions Python, les cmdlets n'utilisent pas de parenthèses; les paramètres sont passés directement au cmdlet, avec parfois certaines options passées avec un tiret `-`. P.ex., `Write-Host -NoNewLine &quot;Bonjour!&quot;` affichera le mot «Bonjour!» sans retour de ligne à la fin.</pre>
 </div>
-<div created="20240507143325711" modified="20240507151608075" tags="[[06 PowerShell]]" title="06.02 PowerShell - Variables">
+<div created="20240507143325711" modified="20240508140427595" tags="[[06 PowerShell]]" title="06.02 PowerShell - Variables">
 <pre>! Déclaration et types de variables
 
 Tout comme avec Python, il n'est pas nécessaire de déclarer formellement les variables avant de les affecter. Par contre, ''les variables doivent toutes commencer par le symbole `$` (signe de dollar)''. De même, PowerShell est également un langage ''faiblement typé'' qui inférera lui aussi les types d'après le contexte, mais qui en plus fera souvent les conversions de type implicitement lorsque ce sera nécessaire.
@@ -10506,16 +10524,29 @@ Par contre, voici des noms de variable ''incorrects'' selon les règles et conve
 
 * $Age
 * $ageUsager
-* $date_naissance</pre>
+* $date_naissance
+
+&lt;div class=&quot;boite attention&quot;&gt;
+
+!!! Contrairement à Python, PowerShell est ''insensible à la casse'', c'est à dire qu'il ne fait pas la différence entre les minuscules et les majuscules. La conséquence concernant les noms de variables est que deux variables portant le même nom, mais avec une casse différente, ''seront vues comme la seule et même variable''.
+
+```powershell
+$nombre = 10
+$Nombre = 15
+
+Write-Host $nombre   # Affichera 15
+Write-Host $Nombre  # Affichera 15
+```
+&lt;/div&gt;</pre>
 </div>
-<div created="20240507151644166" modified="20240507172734735" tags="[[06 PowerShell]]" title="06.03 PowerShell - Affichage">
-<pre>* L'affichage de base à la console avec PowerShell se fait avec la fonction `Host-Write`.
+<div created="20240507151644166" modified="20240508140731058" tags="[[06 PowerShell]]" title="06.03 PowerShell - Affichage">
+<pre>* L'affichage de base à la console avec PowerShell se fait avec la fonction `Write-Host`.
 
-* `Host-Write` ajoute un retour de ligne par défaut. Pour effectuer un affichage sans retour de ligne, on ajoute le paramètre `-NoNewLine`.
+* `Write-Host` ajoute un retour de ligne par défaut. Pour effectuer un affichage sans retour de ligne, on ajoute le paramètre `-NoNewLine`.
 
-* On peut insérer des retours de ligne dans une chaîne avec des &lt;code&gt;&amp;#96;n&lt;/code&gt;, ou sinon simplement entrer des retours de ligne au clavier à l'intérieur des deux guillemets.
+* On peut insérer des retours de ligne dans une chaîne avec des accents graves (//backticks// en anglais) &lt;code&gt;&amp;#96;n&lt;/code&gt; ( à ne pas confondre avec un apostrophe! `'n`), ou sinon simplement entrer des retours de ligne au clavier à l'intérieur des deux guillemets.
 
-* On peut concaténer des chaînes avec un `+`, mais pas directement avec Host-Write, qui va plutôt afficher le `+`.
+* On peut concaténer des chaînes avec un `+`, mais pas directement avec `Write-Host`, qui va plutôt afficher le `+`.
 
 !!! Exemple 6.3a -- Affichage
 ```powershell
