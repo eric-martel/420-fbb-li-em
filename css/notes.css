@@ -25,7 +25,7 @@
  }
  
  .stop::before {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2020/05/stop-stamp-1.png');
+    background-image: url('../img/stop-stamp-1.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -35,7 +35,7 @@
  }
  
  .important::before {
-    background-image: url('https://i.imgur.com/F4wNzDz.png');
+    background-image: url('../img/important.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -45,7 +45,7 @@
  }
  
  .defi::before {
-    background-image: url('https://i.imgur.com/gCXeYiN.png');
+    background-image: url('../img/defi.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -55,7 +55,7 @@
  }
  
  .attention::before {
-    background-image: url('https://i.imgur.com/TGHe7KV.png');
+    background-image: url('../img/attention.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -65,7 +65,17 @@
  }
  
  .note::before {
-    background-image: url('https://i.imgur.com/GfxBmDf.png');
+    background-image: url('../img/note.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+
+ .rappel::before {
+   background-image: url('../img/rappel.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
