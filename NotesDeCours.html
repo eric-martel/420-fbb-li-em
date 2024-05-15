@@ -9056,7 +9056,7 @@ exports.hljs = hljs;
 <div created="20240513193510715" modified="20240515160313180" title="$:/state/toc/Table des matières/06 PowerShell-06.06 PowerShell - Boucles-1329480811">
 <pre>open</pre>
 </div>
-<div list="[[06.06.00 PowerShell - Opérateurs d'incrémentation et de décrémentation]] Semainier" title="$:/StoryList">
+<div list="[[06.00 PowerShell - Développement avec VS Code]] [[06.06.00 PowerShell - Opérateurs d'incrémentation et de décrémentation]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10401,7 +10401,7 @@ VS Code est également déjà installé sur les postes des labos du cégep.
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20240507174514846" modified="20240508161925028" tags="[[06 PowerShell]]" title="06.00 PowerShell - Développement avec VS Code">
+<div created="20240507174514846" modified="20240515161725166" tags="[[06 PowerShell]]" title="06.00 PowerShell - Développement avec VS Code">
 <pre>Comme dit [[précédemment|06.01 PowerShell - Concepts de base]], on peut écrire du code informatique dans n'importe quel éditeur de texte simple, mais il est hautement préférable d'utiliser un éditeur qui inclut des fonctions d'aide au développement, notamment la mise en évidence de syntaxe (//syntax highlighting//) et la capacité d'exécuter facilement le code développé.
 
  Le logiciel //MS Visual Studio Code// (souvent abrégé //VS Code//) est un éditeur de développement très populaire. Les nombreux greffons (//plugins//) disponibles pour ce logiciel en font un véritable couteau suisse  du développement informatique, permettant de développer dans des dizaines de langages, incluant évidemment Python et Powershell. ''C'est l'éditeur que nous allons privilégier dans ce cours.''
@@ -10429,7 +10429,25 @@ Cependant, pour tout langage de programmation, [[comme vous le savez|01.05 Compi
 
 # Le résultat de l'exécution devrait apparaître dans le bas de la fenêtre.&lt;br&gt;[img width=400 [img/PS_VSC_output.png]]
 
-# Les accolades avec le code s'affichent car le fichier n'est pas encore enregistré. Enregistrez votre fichier avec l'extension `.ps1`:&lt;br&gt;[img width=400 [img/PS_VSC_save.png]]&lt;br&gt;[img width=600 [img/PS_VSC_fileSave.png]]</pre>
+# Les accolades avec le code s'affichent car le fichier n'est pas encore enregistré. Enregistrez votre fichier avec l'extension `.ps1`:&lt;br&gt;[img width=400 [img/PS_VSC_save.png]]&lt;br&gt;[img width=600 [img/PS_VSC_fileSave.png]]
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Si jamais, même après toutes ces étapes, vous obtenez un message d'erreur à l'effet que votre script n'est pas signé (fort possible si votre script est sur un partage réseau comme ''U:''), effectuez les opérations suivantes:
+
+# fermez VS Code;
+
+# ouvrez une console PowerShell;
+
+# Entrez la commande suivante:&lt;div&gt;
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+&lt;/div&gt;
+
+# Rouvrez VS Code et réessayez.
+&lt;/div&gt;</pre>
 </div>
 <div created="20240507134703727" modified="20240507200720925" tags="[[06 PowerShell]]" title="06.01 PowerShell - Concepts de base">
 <pre>* PowerShell est un langage //shell// créé par Microsoft pour remplacer le langage «batch» historiquement utilisé comme //shell// sur les systèmes MS-DOS et Windows. En tant que langage //shell//, c'est aussi un langage utilisé dans un terminal pour effectuer des tâches à la volée.
