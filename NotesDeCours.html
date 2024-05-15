@@ -309,6 +309,8 @@ Error message and password prompt
 
 <li>06.06 PowerShell - Boucles</li>
 
+<li>06.06.00 PowerShell - Opérateurs d'incrémentation et de décrémentation</li>
+
 <li>06.06.01 PowerShell - Boucle foreach</li>
 
 <li>06.06.02 PowerShell - Boucle while</li>
@@ -326,6 +328,8 @@ Error message and password prompt
 <li>Carré de sable Python</li>
 
 <li>css</li>
+
+<li>Draft of '06.06.04 PowerShell - Boucle for'</li>
 
 <li>Glossaire</li>
 
@@ -9031,7 +9035,7 @@ exports.hljs = hljs;
 <div created="20240507134659752" modified="20240507134659752" title="$:/state/toc/Table des matières-05 Python--249536019">
 <pre>open</pre>
 </div>
-<div created="20240423165740676" modified="20240514151824894" title="$:/state/toc/Table des matières-05 Python-1329480811">
+<div created="20240423165740676" modified="20240515161003140" title="$:/state/toc/Table des matières-05 Python-1329480811">
 <pre>close</pre>
 </div>
 <div created="20240507134734599" modified="20240507134734599" title="$:/state/toc/Table des matières-06 PowerShell--249536019">
@@ -9046,13 +9050,13 @@ exports.hljs = hljs;
 <div created="20240312145306540" modified="20240403002339843" title="$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811">
 <pre>close</pre>
 </div>
-<div created="20240430150446441" modified="20240514151823245" title="$:/state/toc/Table des matières/05 Python-05.06 Python - Boucles-1329480811">
-<pre>close</pre>
-</div>
-<div created="20240513193510715" modified="20240513193510715" title="$:/state/toc/Table des matières/06 PowerShell-06.06 PowerShell - Boucles-1329480811">
+<div created="20240430150446441" modified="20240515160906894" title="$:/state/toc/Table des matières/05 Python-05.06 Python - Boucles-1329480811">
 <pre>open</pre>
 </div>
-<div list="Semainier" title="$:/StoryList">
+<div created="20240513193510715" modified="20240515160313180" title="$:/state/toc/Table des matières/06 PowerShell-06.06 PowerShell - Boucles-1329480811">
+<pre>open</pre>
+</div>
+<div list="[[06.06.00 PowerShell - Opérateurs d'incrémentation et de décrémentation]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9068,7 +9072,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9088,7 +9092,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9100,11 +9104,11 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;2560&quot;
+            &quot;text&quot;: &quot;1707&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;1067&quot;
         }
     }
 }</pre>
@@ -10479,7 +10483,7 @@ Les «fonctions» PowerShell sont appelées des ''cmdlets''. Ils sont générale
 
 Contrairement aux fonctions Python, les cmdlets n'utilisent pas de parenthèses; les paramètres sont passés directement au cmdlet, avec parfois certaines options passées avec un tiret `-`. P.ex., `Write-Host -NoNewLine &quot;Bonjour!&quot;` affichera le mot «Bonjour!» sans retour de ligne à la fin.</pre>
 </div>
-<div created="20240507143325711" modified="20240508140427595" tags="[[06 PowerShell]]" title="06.02 PowerShell - Variables">
+<div created="20240507143325711" modified="20240515155444970" tags="[[06 PowerShell]]" title="06.02 PowerShell - Variables">
 <pre>! Déclaration et types de variables
 
 Tout comme avec Python, il n'est pas nécessaire de déclarer formellement les variables avant de les affecter. Par contre, ''les variables doivent toutes commencer par le symbole `$` (signe de dollar)''. De même, PowerShell est également un langage ''faiblement typé'' qui inférera lui aussi les types d'après le contexte, mais qui en plus fera souvent les conversions de type implicitement lorsque ce sera nécessaire.
@@ -10500,15 +10504,54 @@ $b = $true # PowerShell comprendra que b est de type booléen (vrai ou faux)
 Les valeurs «vrai» et «faux» sont respectivement représentées par les variables automatiques `$true` et `$false` en PowerShell; des [[variables automatiques|https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables]] sont des variables créées et maintenues par PowerShell  contenant des valeurs prédéfinies et auxquelles on ne doit accéder qu'en lecture seulement.
 &lt;/div&gt;
 
-PowerShell est en mesure (comme avec d'autres langages interprétés, comme Perl par exemple) de convertir automatiquement les types aux fins, p.ex., d'opérations mathématiques.
+
+!! Conversion de types
+
+Contrairement à Python, PowerShell est en mesure (comme avec d'autres langages interprétés, comme Perl par exemple) de convertir automatiquement les types aux fins, p.ex., d'opérations mathématiques //dans certaines situations//.
 
 Ainsi, le code ci-dessous fonctionnera, car PowerShell comprendra automatiquement qu'on veut additionner les valeurs `2` et `3`:
 
 ```powershell
 $a = 2
-$b = &quot;3&quot;
-$c = $a + $b  # $c vaudra 5
+$b = &quot;3.14&quot;
+$c = $a + $b  # $c vaudra 5.14
 ```
+
+Par contre, le code ci-dessous ne fonctionnera pas mathématiquement:
+
+```powershell
+$a = &quot;2&quot;
+$b = &quot;3.14&quot;
+$c = $a + $b  # $c vaudra &quot;23.14&quot; (concaténation des deux chaînes)
+```
+
+afin d'éviter les erreurs et ambiguités, tout comme en Python il sera donc préférable de convertir les variables de type chaîne dans le type numérique souhaité:
+
+```powershell
+[int]$a = &quot;2&quot;  # Convertit en entier
+[double]$b = &quot;3.14&quot;  # Convertit en réel
+$c = $a + $b  # $c vaudra 5.14
+```
+
+```powershell
+$a = &quot;2&quot;
+$b = &quot;3.14&quot;
+$c = [int]$a + [double]$b  # $c vaudra 5.14
+```
+
+```powershell
+$a = &quot;2&quot;
+$b = &quot;3.14&quot;
+$c = [double]($a + $b)  # $c vaudra 23.14
+```
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Il existe d'autres types numériques que `[int]` et `[double]` en PowerShell, mais pour des raisons de concision nous nous limiterons à ces deux-ci.
+&lt;/div&gt;
+
+
+!! Tableaux
 
 On accède aux éléments d'un tableau comme avec des crochets `[]`, comme dans Python, et des indices de tableau qui comment à 0:
 
@@ -10621,7 +10664,7 @@ Write-Host $PI
 Write-Host &quot;PI = $PI&quot;
 ```</pre>
 </div>
-<div created="20240507170950180" modified="20240507172759415" tags="[[06 PowerShell]]" title="06.04 PowerShell - Saisie">
+<div created="20240507170950180" modified="20240515160209611" tags="[[06 PowerShell]]" title="06.04 PowerShell - Saisie">
 <pre>La façon de base de récupérer une saisie clavier à la console en PowerShell est avec la fonction `Read-Host`, qui permet également l'affichage d'un message de saisie.
 
 !!! Exemple 6.4a -- Saisie simple
@@ -10639,17 +10682,33 @@ Bonjour $nom!
 !!! Exemple 6.4b -- Saisie d'un nombre entier
 ```powershell
 $a = 2
-$b = Read-Host &quot;`nEntrez un nombre entier&quot;
+$b = [int](Read-Host &quot;`nEntrez un nombre entier&quot;)
 $c = $a + $b
 
-# Affichera correctement la somme des deux nombres $a et $b
+# Affichera la somme des deux nombres $a et $b
 Write-Host &quot;
 $a + $b = $c
 &quot;
 ```
-</pre>
+
+!!! Exemple 6.4c -- Saisie d'un nombre décimal
+```powershell
+$a = 2
+$b = [double](Read-Host &quot;`nEntrez un nombre décimal&quot;)
+$c = $a + $b
+
+# Affichera la somme des deux nombres $a et $b
+Write-Host &quot;
+$a + $b = $c
+&quot;
+```
+
+&lt;div class=&quot;boite attention&quot;&gt;
+
+!!! Tout comme en Python, et comme expliqué [[précédemment|06.02 PowerShell - Variables]], il est préférable de convertir les valeurs numériques saisies dans le type désiré afin d'éviter les erreurs et les ambiguités.
+&lt;/div&gt;</pre>
 </div>
-<div created="20240513183650589" modified="20240513193021475" tags="[[06 PowerShell]]" title="06.05 PowerShell - Expressions conditionnelles">
+<div created="20240513183650589" modified="20240515160446130" tags="[[06 PowerShell]]" title="06.05 PowerShell - Expressions conditionnelles">
 <pre>Comme dans la grande majorité des langages de programmation, une expression conditionnelle simple sera introduite par l'identificateur `if`. Dans le cas où on désire ajouter un «sinon», on aura aussi l'identificateur quasi-universel `else`. PowerShell utilise un troisième identificateur pour les «sinon, si...» qui est `elseif` (contraction de //else// et //if//).
 
 Contrairement au Python, les conditions sont délimitées par des parenthèses `()`, sans deux-points, et les expressions conditionnelles sont délimitées par des accolades `{}`.
@@ -10706,7 +10765,7 @@ Généralement, on produira des booléens avec les opérateurs logiques, qui son
 # Efface le contenu du terminal
 Clear-Host
 
-$TemperatureExterieure = Read-Host &quot;`nEntrez la température extérieure&quot;
+$TemperatureExterieure = [double](Read-Host &quot;`nEntrez la température extérieure&quot;)
 
 Write-Host &quot;`n1) if simple:&quot;
 if ($TemperatureExterieure -lt 0) {
@@ -10736,7 +10795,7 @@ if ($TemperatureExterieure -le -20) {
   Write-Host &quot;`tAucun risque d'angelure en ce moment!&quot;
 }
 
-$HumiditeRelative = Read-Host &quot;`nEntrez l'humidité relative extérieure en %&quot;
+$HumiditeRelative = [double](Read-Host &quot;`nEntrez l'humidité relative extérieure en %&quot;)
 
 Write-Host &quot;`n5) avec -AND:&quot;
 if ($TemperatureExterieure -lt 0 -AND $HumiditeRelative -gt 50) {
@@ -10759,6 +10818,28 @@ if (!($TemperatureExterieure -lt 0 -OR $HumiditeRelative -gt 50)) {
 
 &lt;&lt;enfants&gt;&gt;
 
+</pre>
+</div>
+<div created="20240515160705490" modified="20240515160838351" tags="[[06.06 PowerShell - Boucles]]" title="06.06.00 PowerShell - Opérateurs d'incrémentation et de décrémentation">
+<pre>!! Opérateurs `+=` et `-=`
+
+Les opérateurs `+=` et `-=` sont souvent utilisés comme raccourcis pour ajouter ou soustraire une valeur quelconque à une variable numérique.
+
+```powershell
+$a = 1
+$a += 2  # Équivalent à «$a = $a + 2», donc donnera 3
+$a -= 1  # Équivalent à «$a = $a - 1», donc donnera 2
+```
+
+!! Opérateurs `++` et `--`
+
+Comme dans beaucoup de langages (mais pas en Python), PowerShell possède les opérateurs d'incrémentation `++` et de décrémentation `--`, qui sont souvent utilisés dans les boucles ''for''. Ils servent à ajouter ou retirer 1 à une valeur numérique.
+
+```powershell
+$a = 1
+$a++  # Équivalent à «$a = $a + 1», donc donnera 2
+$a--  # Équivalent à «$a = $a - 1», donc reviendra à 1
+```
 </pre>
 </div>
 <div created="20240514125205095" modified="20240514154109383" tags="[[06.06 PowerShell - Boucles]]" title="06.06.01 PowerShell - Boucle foreach">
@@ -11169,6 +11250,187 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 </div>
 <div bag="default" created="20181113131237544" modified="20240304230841747" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
 <pre></pre>
+</div>
+<div created="20240430140917848" draft.of="06.06.04 PowerShell - Boucle for" draft.title="06.06.04 PowerShell - Boucle for" modified="20240515160756873" tags="[[06.06 PowerShell - Boucles]]" title="Draft of '06.06.04 PowerShell - Boucle for'">
+<pre>La boucle `for` en PowerShell se comporte comme dans la plupart des autres langages de programmation (boucle ''for'' «classique»), et demande une certaine pause pour étudier sa structure, plus complexe qu'une boucle ''foreach''.
+
+&lt;div class=&quot;boite&quot;&gt;
+
+!! Syntaxe générale
+
+```
+for ([instructions d'initialisation]; [conditions d'itération]; [instructions d'après itération])
+{
+    // instructions à exécuter en boucle
+}
+```
+&lt;/div&gt;
+
+* On appelle ''itération'' chaque exécution d'une boucle (un cycle). Dix itérations voudra dire qu'on a exécuté le bloc de boucle dix fois.
+
+* les ''instructions d'initialisation'', si fournies, seront des instructions à exécuter ''une seule fois, avant la première itération'', typiquement des initialisations de variables qui varieront d'une itération à l'autre;
+
+* les ''conditions d'itération'', si fournies, donnent les conditions à respecter pour effectuer la prochaine itération; si ces conditions ne sont pas respectées, le programme sortira de la boucle; souvent, ces conditions se rapporteront aux variables initialisées dans le premier segment;
+
+* les ''instructions d'après itération'', si fournies, donnent des instructions à exécuter après chaque itération complétée; typiquement, c'est dans ce segment qu'on fera varier les variables initialisées dans le premier segment.
+
+&lt;div class=&quot;boite important&quot;&gt;
+
+!!! La boucle ''for'' classique est très importante à maîtriser, puisque c'est le type de boucle le plus répandu en programmation.
+&lt;/div&gt;
+
+&lt;div class=&quot;boite rappel&quot;&gt;
+
+!!! La boucle ''for'' en Python se comporte comme un ''foreach'' et n'a donc pas la syntaxe d'une boucle ''for'' «classique».
+&lt;/div&gt;
+
+!! Exemple 6.6.1a -- Boucle simple
+
+```powershell
+# Nombre total d'itérations
+$NbIterations = 3
+		
+# Boucle qui s'exécutera $NbIterations fois
+for ($i = 0; $i -lt $NbIterations; $i++)
+{
+  # Affiche la valeur de $i
+  Write-Host &quot;i = $i&quot;
+}
+```
+
+Dans l'exemple ci-dessus, les itérations se dérouleront de la façon suivante:
+
+&lt;&lt;&lt;
+!!! Initialisation
+* $i = 0
+
+!!! Condition d'itération
+* $i (0) &lt; $NbIterations (3)? &amp;rarr; oui &amp;rArr; on continue
+
+!!! Itération 1
+* affiche «i = 0»
+* ''Après itération: '' $i++ &amp;rArr; i == 1
+
+!!! Condition d'itération
+* $i (1) &lt; $NbIterations (3)? &amp;rarr; oui &amp;rArr; on continue
+
+!!! Itération 2
+* affiche «i = 1»
+* ''Après itération: '' $i++ &amp;rArr; i == 2
+
+!!! Condition d'itération
+* $i (2) &lt; $NbIterations (3)? &amp;rarr; oui &amp;rArr; on continue
+
+!!! Itération 3
+* affiche «i = 2»
+* ''Après itération: '' $i++ &amp;rArr; i == 3
+
+!!! Condition d'itération
+* $i (3) &lt; $NbIterations (3)? &amp;rarr; non &amp;rArr; ''on arrête!''
+*&gt;&amp;rArr; la 4e itération de la boucle n'aura pas lieu (donc trois itérations au total)
+&lt;&lt;&lt;
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Dans l'exemple 6.6.1a, ''$i'' est appelé un ''itérateur'' (ou aussi compteur), car il est incrémenté après chaque itération et contrôle la condition d'exécution de la prochaine itération.
+
+!!! Le nom de l'itérateur n'est pas important, mais il est conventionnel d'utilisé des variables nommées ''i'', ''j'' et ''k'' (dans l'ordre) comme itérateurs.
+&lt;/div&gt;
+
+!!! Exemples 6.6.2b -- Quelques boucles ''for''
+```powershell
+# Vide le terminal
+Clear-Host
+
+# Nombre total d'itérations
+$NbIterations = 5
+
+##############################################
+
+Write-Host &quot;`n-- Boucle 1: boucle simple avec «-lt» --&quot;
+
+# Boucle qui s'exécutera $NbIterations fois
+for ($i = 0; $i -lt $NbIterations; $i++)
+{
+  # Affiche le numéro d'itération ($i+1) et la valeur de $i
+  Write-Host &quot;Itération n° $($i+1): i = $i&quot;
+}
+
+# La valeur de $i à la sortie de la boucle sera égale à $NbIterations
+Write-Host &quot;Fin boucle 1: i = $i&quot;
+
+##############################################
+
+Write-Host &quot;`n-- Boucle 2: boucle simple avec «-le» --&quot;
+
+# Boucle qui s'exécutera $NbIterations fois
+for ($i = 1; $i -le $NbIterations; $i++)
+{
+  # Affiche le numéro d'itération ($i+1) et la valeur de $i
+  Write-Host &quot;Itération n° $($i): i = $i&quot;
+}
+
+# La valeur de $i à la sortie de la boucle sera égale à $NbIterations+1
+Write-Host &quot;Fin boucle 2: i = $i&quot;
+
+##############################################
+
+Write-Host &quot;`n-- Boucle 3: boucle qui compte par 2 --&quot;
+
+# Boucle qui s'exécutera int($NbIterations/2) fois
+for ($i = 0; $i -lt $NbIterations; $i += 2)
+{
+  # Affiche le numéro d'itération ([Math]::Floor($i/2)+1) et la valeur de $i
+  # --&gt; On utilise [Math]::Floor() pour aller chercher la partie entière de la division
+  Write-Host &quot;Itération n° $([Math]::Floor($i/2)+1): i = $i&quot;
+}
+
+# La valeur de $i à la sortie de la boucle sera égale à $NbIterations ou $NbIterations+1
+Write-Host &quot;Fin boucle 2: i = $i&quot;
+
+##############################################
+
+Write-Host &quot;`n-- Boucle 4: boucle qui compte à l'envers --&quot;
+
+# Boucle qui s'exécutera $NbIterations fois
+for ($i = $NbIterations-1; $i -ge 0; $i--)
+{
+  # Affiche le numéro d'itération ($NbIterations-$i) et la valeur de $i
+  Write-Host &quot;Itération n° $($NbIterations-$i): i = $i&quot;
+}
+
+# La valeur de $i à la sortie de la boucle sera égale à -1
+Write-Host &quot;Fin boucle 2: i = $i&quot;
+
+##############################################
+
+Write-Host &quot;`n-- Boucle 5: simulation d'une boucle foreach --&quot;
+
+# Déclare un tableau de fruits
+$fruits = &quot;fraise&quot;, &quot;pomme&quot;, &quot;banane&quot;, &quot;poire&quot;, &quot;ananas&quot;
+
+# Boucle qui affiche chaque fruit
+for ($i = 0; $i -lt $fruits.Count; $i++)
+{
+  # Affiche le fruit à partir de son indice dans le tableau fruits
+  Write-Host $fruits[$i]
+}
+
+##############################################
+
+# Ligne vide
+Write-Host
+```
+
+&lt;div class=&quot;boite note&quot;&gt;
+
+!!! Comme montré dans l'exemple 6.6.2b, on peut obtenir la taille d'un tableau (liste) avec `.Count`.
+
+```powershell
+$liste = &quot;banane&quot;, &quot;pomme&quot;, &quot;fraise&quot;
+Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
+```
+&lt;/div&gt;</pre>
 </div>
 <div bag="default" created="20181113131413318" modified="20181113131434698" revision="0" tags="[[Table des matières]]" title="Glossaire" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
