@@ -25,7 +25,7 @@ if (Get-Command $cmd -ErrorAction SilentlyContinue)
     }
 
     # Démarre les notes de cours avec le fureteur par défaut
-    Get-ChildItem "./" -Filter *.html |
+    Get-ChildItem "./prg/" -Filter *.html |
     Foreach-Object {
         Start-Process $_.FullName
     }
