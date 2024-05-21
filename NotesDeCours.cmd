@@ -7,6 +7,4 @@
 :: if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
 
 :: Démarre script PS principal dans une fenêtre minimisée
-cd prg
-start "" /min powershell -executionpolicy bypass -File .\main.ps1 && exit
-::start "" powershell -executionpolicy bypass -File .\main.ps1
+start "" /min powershell -executionpolicy bypass -File .\prg\main.ps1 && exit

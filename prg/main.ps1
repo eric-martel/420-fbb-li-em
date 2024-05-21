@@ -8,7 +8,7 @@ $cmd = 'git'
 if (Get-Command $cmd -ErrorAction SilentlyContinue)
 {
     # Action différente selon que dossier .git existe ou non
-    if (Test-Path '../.git' -PathType Container) {
+    if (Test-Path './.git' -PathType Container) {
         #Met à jour le dépôt Git
         git checkout .
         git pull
