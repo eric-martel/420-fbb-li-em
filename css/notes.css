@@ -83,6 +83,17 @@
     height: 100px;
     content:"";
  }
+
+ .savaistu::before {
+   background-image: url('../img/savais-tu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
  
  .notice {
     color: darkgreen;
