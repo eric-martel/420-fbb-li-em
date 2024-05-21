@@ -189,6 +189,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Table des matières-06 PowerShell-1329480811</li>
 
+<li>$:/state/toc/Table des matières-07 Tests et débogage-1329480811</li>
+
 <li>$:/state/toc/Table des matières-99 Extras-1329480811</li>
 
 <li>$:/state/toc/Table des matières/03 Programmation sans code-03.02 Turtle!-1329480811</li>
@@ -321,6 +323,22 @@ Error message and password prompt
 
 <li>06.Exercices</li>
 
+<li>07 Tests et débogage</li>
+
+<li>07.01 Introduction</li>
+
+<li>07.02 Les tests fonctionnels</li>
+
+<li>07.03 Les tests par traçage</li>
+
+<li>07.04 Les types de bogues</li>
+
+<li>07.05 Le débogage</li>
+
+<li>07.Exercices</li>
+
+<li>08 La documentation du code</li>
+
 <li>4.6.Solutions</li>
 
 <li>Carré de sable PowerShell</li>
@@ -328,6 +346,10 @@ Error message and password prompt
 <li>Carré de sable Python</li>
 
 <li>css</li>
+
+<li>Draft of '07.04 Les types de bogues'</li>
+
+<li>Draft of '08 La documentation du code'</li>
 
 <li>Glossaire</li>
 
@@ -340,8 +362,6 @@ Error message and password prompt
 <li>Semainier</li>
 
 <li>Table des matières</li>
-
-<li>XX La documentation du code</li>
 
 </ul>
 </p>
@@ -9033,14 +9053,17 @@ exports.hljs = hljs;
 <div created="20240507134659752" modified="20240507134659752" title="$:/state/toc/Table des matières-05 Python--249536019">
 <pre>open</pre>
 </div>
-<div created="20240423165740676" modified="20240516122546024" title="$:/state/toc/Table des matières-05 Python-1329480811">
+<div created="20240423165740676" modified="20240521183625728" title="$:/state/toc/Table des matières-05 Python-1329480811">
 <pre>close</pre>
 </div>
 <div created="20240507134734599" modified="20240507134734599" title="$:/state/toc/Table des matières-06 PowerShell--249536019">
 <pre>open</pre>
 </div>
-<div created="20240507142337522" modified="20240507142337522" title="$:/state/toc/Table des matières-06 PowerShell-1329480811">
-<pre>open</pre>
+<div created="20240507142337522" modified="20240521121039290" title="$:/state/toc/Table des matières-06 PowerShell-1329480811">
+<pre>close</pre>
+</div>
+<div created="20240521123444274" modified="20240521183406921" title="$:/state/toc/Table des matières-07 Tests et débogage-1329480811">
+<pre>close</pre>
 </div>
 <div created="20240410110429186" modified="20240410110429186" title="$:/state/toc/Table des matières-99 Extras-1329480811">
 <pre>open</pre>
@@ -9054,7 +9077,7 @@ exports.hljs = hljs;
 <div created="20240513193510715" modified="20240515160313180" title="$:/state/toc/Table des matières/06 PowerShell-06.06 PowerShell - Boucles-1329480811">
 <pre>open</pre>
 </div>
-<div list="[[06.02 PowerShell - Variables]] Semainier" title="$:/StoryList">
+<div list="Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9070,7 +9093,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9090,7 +9113,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9102,11 +9125,11 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1707&quot;
+            &quot;text&quot;: &quot;2560&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1067&quot;
+            &quot;text&quot;: &quot;1440&quot;
         }
     }
 }</pre>
@@ -11238,6 +11261,220 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 #* Si vous n'avez pas fait ou pas complété le TP1, c'est le moment de le faire, mais faites-le en PowerShell seulement (pas AlgoBox).
 #* L'organigramme n'a pas besoin d'être modifié, mais demeure important à faire ou compléter si ce n'est déjà fait.</pre>
 </div>
+<div created="20240521121047008" modified="20240521121604147" tags="[[Table des matières]]" title="07 Tests et débogage">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;$macrocall $name=&quot;toc-selective-expandable&quot; tag=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+
+&lt;/div&gt;</pre>
+</div>
+<div created="20240521121120369" list="" modified="20240521125630758" tags="[[07 Tests et débogage]]" title="07.01 Introduction">
+<pre>* Un ''bogue informatique'' est une erreur imprévue qui se produit dans un programme informatique.
+
+* Un bogue est presque toujours dû à une erreur de programmation (erreur de codage ou d'algorithmique) du programme qui présente le bogue, mais peut aussi être dû à un bogue de module non contrôlé par le programmeur ou la programmeuse, à un bogue du compilateur ou de l'interpréteur, ou même à un bogue de l'architecture matérielle.
+
+* Un bogue peut être présent sans qu'on s'en rende compte: certains bogues peuvent prendre des années avant de se manifester ou même ne jamais être découverts si les conditions proprices à sa manifestation ne sont jamais rencontrées.
+
+* Le ''débogage'' d'un programme informatique consiste à en éliminer les bogues connus. Pour ce faire, on doit généralement identifier les conditions sous lesquelles le bogue se manifeste afin de repérer l'endroit dans le code où le bogue a été inséré.
+
+* Avant de publier un logiciel, on doit le ''tester rigoureusement'' afin de s'assurer de trouver et d'éliminer le plus grand nombre de bogues possibles. Il y a plusieurs façons de tester un logiciel; dans le présent cours, on se concentrera sur les ''tests fonctionnels'' et les ''tests par traçage''.
+
+&lt;div class=&quot;formule savaistu&quot;&gt;
+
+!!! Le terme ''bogue'' vient de l'anglais //bug// (insecte ou bestiole): lorsque les tout premiers ordinateurs ont été inventés, les circuits imprimés, puces électroniques et transistors n'existaient pas encore: on utilisait de gros circuits électriques avec des lampes à incandescence pour construire les divers ciruits logiques. Or, il arrivait que des insectes (ou autres bestioles) se faufilent dans les circuits et provoquent des courts-circuits, faisant ainsi sauter les lampes. Quand l'ordinateur «plantait», on en déduisait souvent qu'un //bug// avait fait griller un circuit. Même après l'arrivée des circuits électroniques modernes, le terme est demeuré et s'est inséré dans le langage informatique pour désigner toute forme de problème inattendu, y compris des erreurs de programmation, et le mot anglais //bug// a été francisé sous le terme «bogue».
+&lt;/div&gt;</pre>
+</div>
+<div created="20240521125409568" modified="20240521152414376" tags="[[07 Tests et débogage]]" title="07.02 Les tests fonctionnels">
+<pre>* Les tests fonctionnels sont la forme de tests la plus élémentaire, mais aussi la plus importante: ''est-ce que le programme, se comporte (fonctionne) comme il se doit''?
+
+* Donc, pour effectuer des tests fonctionnels, il suffit d'exécuter le programme et d'''observer son comportement'' (ses extrants) en fonction des intrants fournis.
+
+* Bien que ça paraisse simple en principe, en pratique, cela peut représenter un important défi, et ce pour différentes raisons:
+** si le programme est très complexe et comprend plusieurs écrans ayant chacun plusieurs champs d'entrée utilisateur (le contenu desquels écrans peut même varier en fonction d'intrants précédents), il peut être fastidieux d'effectuer même des tests de fonctionnement de base;
+** tout dépendant de sa nature, un même champ pourrait prendre plusieurs types de saisie, et alors il faut essayer toutes les possibilités d'intérêt, ce qui peut surmultiplier le nombre de tests à faire pour l'ensemble de l'application.
+
+* Il y a deux grands types de tests fonctionnels, tous deux très importants:
+*# ''les tests de conformité'': ces tests servent à s'assurer que le programme a toujours le comportement attendu dans un contexte d'utilisation normale. Dans ce cas, on testera seulement des entrées valides, mais il faut penser à tous les cas de figure possibles;
+*# ''les tests de robustesse'': ces tests servent à s'assurer que le programme ne plante pas ou n'a pas de comportement inapproprié en cas d'entrées inattendues ou invalides. Dans ce cas, on testera des entrées qui ne devraient jamais être entrées par un utilisateur légitime formé.
+
+* Le plus difficile dans l'élaboration de tests fonctionnels est souvent de ''sortir des sentiers battus'' (//to think outside the box//) et d'imaginer, dans un premier temps, tout ce qu'il serait possible qu'un utilisateur légitime saisisse dans l'application et, dans un second temps, ce qu'un utilisateur malicieux (ou simplement maladroit) pourrait entrer pour nuire au comportement du logiciel.
+
+* Des tests fonctionnels peuvent être effectués à toute étape du développement d'un logiciel: chaque fois qu'on a un code compilable/interprétable, on peut l'exécuter et observer son comportement. ''Tester souvent durant le développement d'un logiciel diminue considérablement le risque que des bogues fonctionnels subsistent à la fin du développement.''
+
+!! Tests de conformité
+
+Il n'y a pas de recette universelle pour tester la conformité d'un logiciel, puisque chaque logiciel aura ses propres spécifications de comportement. 
+
+Par contre, on peut généralement dégager quelques principes de base selon le type de donnée à saisir et on peut tester les aspects suivants (mais toujours seulement si c'est __permis/attendu__ par l'application):
+
+* ''pour les données numériques'':
+** nombre entier;
+** nombre décimal (doit être écrit avec point ou virgule?);
+** zéro (0);
+** un nombre négatif;
+** la plus grande valeur théorique raisonnable selon le contexte (p.ex., pour un âge, «200» serait sans doute une valeur limite raisonnable);
+
+* ''pour les données textuelles'':
+** présence d'espaces dans la donnée saisie;
+** présence de caractères accentués;
+** présence de nombres;
+** présence de caractères spéciaux (`'`, `&quot;`, `-`, `\`, `/`, `#`, `$`, `:`, etc.). (__permis/attendus seulement__).
+
+!! Tests de robustesse
+
+Tout comme pour les tests conformité, il n'y a pas de recette universelle. Ici, on essaie d'entrer tout ce qui //ne devrait pas// être entré.
+
+On peut généralement dégager quelques principes de base selon le type de donnée à saisir et on peut tester les aspects suivants (mais toujours seulement si c'est __inattendu__ par l'application):
+
+* ''pour les données numériques'':
+** nombre entier si un nombre décimal est attendu et vice-versa;
+** nombre décimal écrit avec mauvais format (p.ex., mauvais séparateur décimal ou présence d'espaces);
+** zéro (0) si inattendu (p.ex., pour une taille);
+** un nombre négatif si inattendu (p.ex, pour un âge);
+** une valeur déraisonnable selon le contexte (p.ex., «2000000» pour une année de naissance);
+** une donnée non numérique (p.ex., un mot);
+
+* ''pour les données textuelles'':
+** présence d'espaces si inattendus;
+** présence de caractères accentués si inattendus;
+** présence de nombres si inattendus;
+** présence de caractères spéciaux (`'`, `&quot;`, `-`, `\`, `/`, `#`, `$`, `:`, etc.) &amp;rarr; ''__TOUJOURS__''.</pre>
+</div>
+<div created="20240521151912249" modified="20240521160659105" tags="[[07 Tests et débogage]]" title="07.03 Les tests par traçage">
+<pre>Alors que les tests fonctionnels peuvent se faire autant durant le développement (à des étapes intermédiaires) qu'après le développement, les tests par traçage se font seulement durant le développement, puisqu'ils impliquent de laisser des ''traces de débogage'' dans les extrants témoignant du bon déroulement du programme.
+
+Il est important de laisser une ''marque de débogage uniforme'' dans les traces afin:
+
+# de faciliter le repérage des traces dans les extrants;
+# de faciliter le retrait de ces marques dans la version qui sera publiée.
+
+!!! Exemple 7.3a -- Traçage&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvnen6f&quot;&gt;&lt;/iframe&gt;
+</pre>
+</div>
+<div created="20240521160749950" modified="20240521180159693" tags="[[07 Tests et débogage]]" title="07.04 Les types de bogues">
+<pre>Il y a différents types de bogues; ici, on les classera en deux catégories générales, soit les ''bogues de codage'' et les ''bogues algorithmiques''.
+
+!!1. Les bogues de codage
+
+Les bogues de codage sont généralement les plus simples à trouver et à corriger: ils proviennent d'une erreur de syntaxe ou de mauvaise utilisation d'éléments de code. Ils génèrent souvent des ''erreurs de compilation/interprétation'' (//compilation errors//) de la part du compilateur/interpréteur ou encore des ''erreurs à l'exécution'' (//runtime errors//), indiquant habituellement l'endroit dans le code où l'erreur a été rencontrée et en facilitant ainsi l'identification et la correction, mais pas tout le temps.
+
+Ces bogues proviennent généralement d'oublis, d'omissions ou de mauvaises compréhensions de certains concepts mathématiques ou codage eu égard au langage de programmation utilisé.
+
+!!! Exemple 7.4a -- Erreur de codage: mauvais types&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvqas24&quot;&gt;&lt;/iframe&gt;
+
+Dans l'exemple 7.4a, l'interpréteur indique qu'il a rencontré une erreur à la ligne 21, et il nous dit:
+
+```
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+```
+
+Il nous indique donc ici qu'il ne peut effectuer l'opération de soustraction (`-`) entre un type ''int'' et un type ''str''; effectivement, si on ajoute une trace de débogage pour voir les types:
+
+!!! Exemple 7.4b -- Erreur de codage: mauvais types avec traces&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvqqz6a&quot;&gt;&lt;/iframe&gt;
+
+On voit que `annee_naissance` est de type ''str'', alors que `annee_courante` est de type ''int''. On se rend alors compte qu'on a omis de convertir la saisie de `annee_naissance` en ''int''! La correction sera donc d'ajouter la conversion à un endroit opportun (à faire en exercice).
+
+&gt; L'exemple 7.4b contient aussi une erreur de syntaxe ne générant pas d'erreur (à faire en exercice).
+
+!!! Exemple 7.4c -- Bogue mathématique (division par zéro)&lt;iframe width=100% height=400 src=&quot;https://onecompiler.com/embed/python/42dvrwgz3&quot;&gt;&lt;/iframe&gt;
+
+!!! Exemple 7.4d -- Bogue logique (indice hors plage)&lt;iframe width=100% height=400 src=&quot;https://onecompiler.com/embed/python/42dvtvhdf&quot;&gt;&lt;/iframe&gt;
+
+!!2. Les bogues algorithmiques
+
+Les bogues algorithmiques sont souvent plus difficiles à trouver et à corriger: ils proviennent d'erreurs de logique dans la solution implémentée. Souvent, ils ne génèrent ''aucune erreur'' et se manifestent seulement par un extrant inattendu.
+
+!!! Exemple 7.4e -- Bogue algorithmique&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvscpy2&quot;&gt;&lt;/iframe&gt;
+
+Dans l'exemple 7.4e, on comprend que l'intention serait d'afficher un message différent selon qu'on a au moins 13 ans, au moins 14 ans, au moins 18 ans ou moins de 13 ans. Or, bien qu'aucune erreur ne s'affiche, ce n'est pas le comportement observé. Il faut bien analyser le déroulement logique du code pour comprendre que dès qu'une personne aura au moins 13 ans, seul le premier message s'affichera: il faut donc modifier la logique de l'algorithme afin d'obtenir le résultat désiré (à faire en exercice).
+</pre>
+</div>
+<div created="20240521175930794" modified="20240521183320500" tags="[[07 Tests et débogage]]" title="07.05 Le débogage">
+<pre>Tel qu'indiqué en [[introduction|07.01 Introduction]], le débogage d'un programme informatique consiste à en éliminer les bogues.
+
+Bien qu'il n'y ait pas de recette universelle pour corriger un bogue, il y a quelques principes généraux qu'on peut dégager.
+
+* La ''première étape'' dans un processus de débogage est de voir s'il y a un ''message d'erreur'' et, si oui, de ''__le lire__'' et de le ''__comprendre__''. Trop souvent, les gens constatent qu'il y a une erreur et essaient tout de suite de corriger le code sans avoir pris la peine de lire et comprendre le message d'erreur, ce qui est souvent peu productif.
+
+* La ''seconde étape'', s'il n'y a pas de message d'erreur, pourrait être de placer des ''traces de débogage'' dans le code à des endroits stratégiques pour mieux «voir» ce qui se passe et comprendre comment le programme arrive à tel ou tel résultat.
+
+* Si aucune des premières étapes ne porte fruit, une __''troisième étape''__ pourrait être de lire et suivre minutieusement le déroulement du code dans sa tête pour découvrir ce qui cause le problème, en faisant doublement attention aux écueils courants du langage utilisé (indices de tableau, conversions de types, etc.).
+
+!! Les débogueurs
+
+Certains outils de développement offrent des ''débogueurs'', c'est-à-dire des outils facilitant le débogage. Les fonctionnalités varient d'un débogueur à l'autre.
+
+!!! Débogueurs Python et PowerShell dans VS Code
+
+Les extensions pour Python et PowerShell dans VS Code intègrent un débogueur. Pour l'utiliser, il suffit de cliquer sur l'cône d'insecte à gauche, puis de cliquer sur «Run and Debug»; le code sera alors exécuté normalement, mais s'il rencontre une erreur il la pointera directement dans le code source:
+
+[img width=900 [img/Python-VSC-Debug.png]]
+[img width=900 [img/Python-VSC-Debug2.png]]
+
+De plus, on peut créer des ''points d'arrêt'' et exécuter le code pas à pas pour comprendre ce qui se passe au fur et à mesure et examiner la valeur des variables (démo en classe).
+
+</pre>
+</div>
+<div created="20240521183423841" modified="20240521183606973" tags="[[07 Tests et débogage]]" title="07.Exercices">
+<pre># Corrigez les bogues des [[exemples 7.4a, 7.4c, 7.4d et 7.4e|07.04 Les types de bogues]].</pre>
+</div>
+<div created="20240227194246842" modified="20240521121441961" tags="[[Table des matières]]" title="08 La documentation du code">
+<pre>Quand on commence à programmer, on est souvent naïf: on programme souvent sous la présomption (consciente ou non) que:
+
+# personne d'autre que nous n'aura à lire ou modifier notre code;
+
+# on n'oubliera jamais quelle était notre intention en codant ceci ou cela de telle ou de telle manière;
+
+# notre code est de toute façon facilement compréhensible et qu'il sera possible à n'importe qui de le lire ou le modifier au besoin.
+
+Or, ''rien ne saurait être plus faux''. Même si on écrit un programme chez soi pour des besoins strictement personnels, si on n'interragit pas avec le code de manière régulière, on l'oubliera rapidement. Et si on écrit un programme pour un client (incluant un employeur), il est pratiquement assuré qu'un jour quelqu'un d'autre aura à le lire ou le modifier.
+
+Dans ce contexte, il est ''impératif'' de bien documenter tout le code qu'on écrit. La méthode de documentation de loin la plus efficace est l'insertion de ''commentaires'' directement dans le code, ce qui est permis dans la plupart sinon la totalité des langages de programmation.
+
+Il existe plusieurs écoles de pensées quant à la rédaction des commentaires (allant du «une instruction, un commentaire» jusqu'au code autodescriptif sans commentaires), mais:
+&lt;div class=&quot;formule&quot;&gt;la règle générale est qu'on écrira des commentaires pertinents utiles à la compréhension des objectifs du code ou en faciliant la lecture&lt;/div&gt;
+Si quelqu'un qui ne connaît pas du tout le langage de programmation utilisé est capable néanmoins de comprendre ce que fait le code, alors c'est mission accomplie!
+
+&lt;div class=&quot;boite rappel&quot;&gt;
+
+En Python, on insère des commentaires en les précédant d'un dièse (`#`):
+
+```python
+# Ceci est un commentaire Python sur une ligne seule
+
+entier = 10  # Ceci est un commentaire placé en fin de ligne
+```
+
+Il n'y a pas de commentaires de bloc en Python, mais il y a des textes de documentation (pas vraiment des commentaires...) qui peuvent s'écrire sur plusieurs lignes:
+
+```python
+&quot;&quot;&quot;
+Ceci est un texte de documentation.
+
+On l'encadre avec deux lignes de trois guillemets (&quot;),
+soit l'une au-dessus et l'autre en-dessous.
+&quot;&quot;&quot;
+```
+
+En PowerShell, il y a deux façons d'écrire des commentaires, soit avec des `#` comme en Python ou avec des `&lt;# #&gt;` pour insérer des blocs de commentaires:
+
+```powershell
+# Ceci est un commentaire PowerShell sur une ligne seule
+
+$entier = 10  # Ceci est un commentaire placé en fin de ligne
+
+&lt;#
+    En PowerShell, on peut insérer des commentaires multilignes avec '&lt;# #&amp;lt;' comme c'est le cas ici.
+    Il sont utiles pour écrire de longues descriptions, des informations,
+    de la documentation, etc.
+#&gt;
+
+# Les «&lt;# #&gt;» sont aussi utiles pour mettre des commentaires directement à l'intérieur d'une instruction
+$puissance = [Math]::Pow(10 &lt;#base#&gt;, 2 &lt;#exposant#&gt;)
+```
+&lt;/div&gt;
+</pre>
+</div>
 <div created="20240403165332612" modified="20240403170220962" title="4.6.Solutions">
 <pre># On ne sait pas combien de temps exactement la génératrice devra fonctionner, donc il faudra une règle quelque-part disant //fonctionner tant qu'il n'y a pas de courant//, donc boucle ''while''.
 
@@ -11265,6 +11502,112 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 </div>
 <div bag="default" created="20181113131237544" modified="20240304230841747" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
 <pre></pre>
+</div>
+<div created="20240521175553353" modified="20240521175553353" title="Draft of '07.04 Les types de bogues'">
+<pre>Tel qu'indiqué en intrduction, le débogage d'un programme informatique consiste à en éliminer les bogues.
+
+On trouve les bogues en effectuant des tests.
+
+Une fois un bogue trouvé, il faut le corriger ou au moins en comprendre l'origine, selon sa nature. Ici, on s'intéressera aux bogues:
+
+* de codage;
+* algorithmiques;
+* mathématiques et de logique de codage.
+
+!!1. Les bogues de codage
+
+Les bogues de codage sont généralement les plus simples à trouver et à corriger: ils proviennent d'une erreur de syntaxe ou de mauvaise utilisation d'éléments de code. Ils génèrent souvent des ''erreurs de compilation/interprétation'' (//compilation errors//) de la part du compilateur/interpréteur ou encore des ''erreurs à l'exécution'' (//runtime errors//), indiquant habituellement l'endroit dans le code où l'erreur a été rencontrée et en facilitant ainsi l'identification et la correction, mais pas tout le temps.
+Ces bogues proviennent généralement d'oublis, d'omissions ou de mauvaises compréhensions de certains concepts mathématiques ou codage eu égard au langage de programmation utilisé. Ils génèrent souvent des ''erreurs à l'exécution'' (//runtime errors//), c.-à-d. que le compilateur/interpréteur ne voit aucune erreur dans le code, mais qu'une erreur se manifeste lorsque le programme est exécuté.
+
+!!! Exemple 7.4a -- Erreur de codage: mauvais types&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvqas24&quot;&gt;&lt;/iframe&gt;
+
+Dans l'exemple 7.4a, l'interpréteur indique qu'il a rencontré une erreur à la ligne 21, et il nous dit:
+
+```
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+```
+
+Il nous indique donc ici qu'il ne peut effectuer l'opération de soustraction (`-`) entre un type ''int'' et un type ''str''; effectivement, si on ajoute une trace de débogage pour voir les types:
+
+!!! Exemple 7.4b -- Erreur de codage: mauvais types avec traces&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvqqz6a&quot;&gt;&lt;/iframe&gt;
+
+On voit que `annee_naissance` est de type ''str'', alors que `annee_courante` est de type ''int''. On se rend alors compte qu'on a omis de convertir la saisie de `annee_naissance` en ''int''! La correction sera donc d'ajouter la conversion à un endroit opportun (à faire en exercice).
+
+L'exemple 7.4b contient aussi une erreur de syntaxe (à faire en exercice).
+
+!!2. Les bogues algorithmiques
+
+Les bogues algorithmiques sont souvent plus difficiles à trouver et à corriger: ils proviennent d'erreurs de logique dans la solution implémentée. Souvent, ils ne génèrent ''aucune erreur'' et se manifestent seulement par un extrant inattendu.
+
+!!! Exemple 7.4c -- Bogue algorithmique&lt;iframe width=100% height=600 src=&quot;https://onecompiler.com/embed/python/42dvscpy2&quot;&gt;&lt;/iframe&gt;
+
+Dans l'exemple 7.4c, on comprend que l'intention serait d'afficher un message différent selon qu'on a au moins 13 ans, au moins 14 ans, au moins 18 ans ou moins de 13 ans. Or, bien qu'aucune erreur ne s'affiche, ce n'est pas le comportement observé. Il faut bien analyser le déroulement logique du code pour comprendre que dès qu'une personne aura au moins 13 ans, seul le premier message s'affichera: il faut donc modifier la logique de l'algorithme afin d'obtenir le résultat désiré (à faire en exercice).
+
+!!3. Les bogues mathématiques et de logique de codage
+
+
+
+!!! Exemple 7.4d -- Bogue mathématique (division par zéro)&lt;iframe width=100% height=400 src=&quot;https://onecompiler.com/embed/python/42dvrwgz3&quot;&gt;&lt;/iframe&gt;
+
+!!! Exemple 7.4e -- Bogue logique (indice hors plage)&lt;iframe width=100% height=400 src=&quot;https://onecompiler.com/embed/python/42dvtvhdf&quot;&gt;&lt;/iframe&gt;
+
+</pre>
+</div>
+<div created="20240521121422521" modified="20240521121422521" title="Draft of '08 La documentation du code'">
+<pre>Quand on commence à programmer, on est souvent naïf: on programme souvent sous la présomption (consciente ou non) que:
+
+# personne d'autre que nous n'aura à lire ou modifier notre code;
+
+# on n'oubliera jamais quelle était notre intention en codant ceci ou cela de telle ou de telle manière;
+
+# notre code est de toute façon facilement compréhensible et qu'il sera possible à n'importe qui de le lire ou le modifier au besoin.
+
+Or, ''rien ne saurait être plus faux''. Même si on écrit un programme chez soi pour des besoins strictement personnels, si on n'interragit pas avec le code de manière régulière, on l'oubliera rapidement. Et si on écrit un programme pour un client (incluant un employeur), il est pratiquement assuré qu'un jour quelqu'un d'autre aura à le lire ou le modifier.
+
+Dans ce contexte, il est ''impératif'' de bien documenter tout le code qu'on écrit. La méthode de documentation de loin la plus efficace est l'insertion de ''commentaires'' directement dans le code, ce qui est permis dans la plupart sinon la totalité des langages de programmation.
+
+Il existe plusieurs écoles de pensées quant à la rédaction des commentaires (allant du «une instruction, un commentaire» jusqu'au code autodescriptif sans commentaires), mais:
+&lt;div class=&quot;formule&quot;&gt;la règle générale est qu'on écrira des commentaires pertinents utiles à la compréhension des objectifs du code ou en faciliant la lecture&lt;/div&gt;
+Si quelqu'un qui ne connaît pas du tout le langage de programmation utilisé est capable néanmoins de comprendre ce que fait le code, alors c'est mission accomplie!
+
+&lt;div class=&quot;boite rappel&quot;&gt;
+
+En Python, on insère des commentaires en les précédant d'un dièse (`#`):
+
+```python
+# Ceci est un commentaire Python sur une ligne seule
+
+entier = 10  # Ceci est un commentaire placé en fin de ligne
+```
+Il n'y a pas de commentaires de bloc en Python, mais il y a des textes de documentation (pas vraiment des commentaires...) qui peuvent s'écrire sur plusieurs lignes:
+
+```python
+&quot;&quot;&quot;
+Ceci est un texte de documentation.
+
+On l'encadre avec deux lignes de trois guillemets (&quot;),
+soit l'une au-dessus et l'autre en-dessous.
+&quot;&quot;&quot;
+```
+
+En PowerShell, il y a deux façons d'écrire des commentaires, soit avec des `#` comme en Python ou avec des `&lt;# #&gt;` pour insérer des blocs de commentaires:
+
+```powershell
+# Ceci est un commentaire PowerShell sur une ligne seule
+
+$entier = 10  # Ceci est un commentaire placé en fin de ligne
+
+&lt;#
+    En PowerShell, on peut insérer des commentaires multilignes avec '&lt;# #&amp;lt;' comme c'est le cas ici.
+    Il sont utiles pour écrire de longues descriptions, des informations,
+    de la documentation, etc.
+#&gt;
+
+# Les «&lt;# #&gt;» sont aussi utiles pour mettre des commentaires directement à l'intérieur d'une instruction
+$puissance = [Math]::Pow(10 &lt;#base#&gt;, 2 &lt;#exposant#&gt;)
+```
+&lt;/div&gt;
+</pre>
 </div>
 <div bag="default" created="20181113131413318" modified="20181113131434698" revision="0" tags="[[Table des matières]]" title="Glossaire" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -11313,7 +11656,7 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 &lt;/p&gt;
 \end</pre>
 </div>
-<div created="20231022185402519" modified="20240515190247671" tags="[[Table des matières]]" title="Semainier">
+<div created="20231022185402519" modified="20240521183917400" tags="[[Table des matières]]" title="Semainier">
 <pre>| Semaine | Sections à l'étude | À faire |h
 | 1 (28 fév.) |&lt;ul&gt;&lt;li&gt;[[01|01 Concepts de base]] au complet&lt;/li&gt;&lt;li&gt;[[02.01|02.01 Introduction]] et [[02.02|02.02 Formes de base]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[1.1 à 1.7|01.Exercices]]&lt;/li&gt;&lt;li&gt;Exercices [[2.1 à 2.4|02.Exercices]]&lt;/li&gt;&lt;/ul&gt;|
 | 2 (6 mar.) |&lt;ul&gt;&lt;li&gt;[[02.03 à 02.05|02 Diagrammes de flux]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;Exercices [[2.5 à 2.7|02.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 14 mars&lt;/li&gt;&lt;/ul&gt;|
@@ -11326,7 +11669,8 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 | 8 (24-25 avr.) |&lt;ul&gt;&lt;li&gt;[[05.01 à 05.04|05 Python]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;TP1&lt;/li&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Exercice 5.1|05.Exercices]]&lt;/li&gt;&lt;/ul&gt;|
 | 9 (1-2 mai) |&lt;ul&gt;&lt;li&gt;[[05.05 à 05.07|05 Python]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Tous les exercices de la section 5|05.Exercices]]&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 8 mai&lt;/li&gt;&lt;/ul&gt;|
 | 10 (8 mai) |&lt;ul&gt;&lt;li&gt;[[06.00 à 06.04|06 PowerShell]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;''Quiz 3 (14 h)''&lt;/li&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Exercices 6.01 et 6.02|06.Exercices]]&lt;/li&gt;&lt;/ul&gt;|
-| 11 (15 mai) |&lt;ul&gt;&lt;li&gt;[[06.05 et 06.06|06 PowerShell]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Exercices 6.03 à 6.05|06.Exercices]]&lt;/li&gt;&lt;li&gt;TP2&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 22 mai&lt;/li&gt;&lt;/ul&gt;|</pre>
+| 11 (15 mai) |&lt;ul&gt;&lt;li&gt;[[06.05 et 06.06|06 PowerShell]]&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Exercices 6.03 à 6.05|06.Exercices]]&lt;/li&gt;&lt;li&gt;TP2&lt;/li&gt;&lt;li&gt;Se préparer pour le quiz du 22 mai&lt;/li&gt;&lt;/ul&gt;|
+| 12 (22 mai) |&lt;ul&gt;&lt;li&gt;[[07|07 Tests et débogage]] et [[08|08 La documentation du code]] au complet&lt;/li&gt;&lt;/ul&gt;|&lt;ul&gt;&lt;li&gt;''Quiz 4 (14 h)''&lt;/li&gt;&lt;li&gt;Lire les sections à l'étude&lt;/li&gt;&lt;li&gt;[[Exercice 7.1|07.Exercices]]&lt;/li&gt;&lt;li&gt;TP2&lt;/li&gt;&lt;/ul&gt;|</pre>
 </div>
 <div bag="default" caption="Contenu" created="20181113130821883" list-before="$:/core/ui/SideBar/Open" modified="20240227154406539" revision="0" tags="$:/tags/SideBar" title="Table des matières" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -11336,48 +11680,6 @@ Write-Host &quot;Taile de la liste = $($liste.Count)&quot;
 &lt;&lt;toc-selective-expandable 'Table des matières'&gt;&gt;
 
 &lt;/div&gt;</pre>
-</div>
-<div created="20240227194246842" modified="20240430134336824" tags="[[Table des matières]]" title="XX La documentation du code">
-<pre>Quand on commence à programmer, on est souvent naïf: on programme souvent sous la présomption (consciente ou non) que:
-
-# personne d'autre que nous n'aura à lire ou modifier notre code;
-
-# on n'oubliera jamais quelle était notre intention en codant ceci ou cela de telle ou de telle manière;
-
-# notre code est de toute façon facilement compréhensible et qu'il sera possible à n'importe qui de le lire ou le modifier au besoin.
-
-Or, ''rien ne saurait être plus faux''. Même si on écrit un programme chez soi pour des besoins strictement personnels, si on n'interragit pas avec le code de manière régulière, on l'oubliera rapidement. Et si on écrit un programme pour un client (incluant un employeur), il est pratiquement assuré qu'un jour quelqu'un d'autre aura à le lire ou le modifier.
-
-Dans ce contexte, il est ''impératif'' de bien documenter tout le code qu'on écrit. La méthode de documentation de loin la plus efficace est l'insertion de ''commentaires'' directement dans le code, ce qui est permis dans la plupart sinon la totalité des langages de programmation.
-
-Il existe plusieurs écoles de pensées quant à la rédaction des commentaires (allant du «une instruction, un commentaire» jusqu'au code autodescriptif sans commentaires), mais:
-&lt;div class=&quot;formule&quot;&gt;la règle générale est qu'on écrira des commentaires pertinents utiles à la compréhension des objectifs du code ou en faciliant la lecture&lt;/div&gt;
-Si quelqu'un qui ne connaît pas du tout le langage de programmation utilisé est capable néanmoins de comprendre ce que fait le code, alors c'est mission accomplie!
-
-Par exemple, en Python, on insère des commentaires en les précédant d'un dièse (`#`):
-
-```python
-# Ceci est un commentaire Python sur une ligne seule
-
-entier = 10  # Ceci est un commentaire placé en fin de ligne
-```
-
-En PowerShell, il y a deux façons d'écrire des commentaires, soit avec des `#` comme en Python ou avec des `&lt;# #&gt;` pour insérer des blocs de commentaires:
-
-```powershell
-# Ceci est un commentaire PowerShell sur une ligne seule
-
-$entier = 10  # Ceci est un commentaire placé en fin de ligne
-
-&lt;#
-    En PowerShell, on peut insérer des commentaires multilignes avec '&lt;# #&amp;lt;' comme c'est le cas ici.
-    Il sont utiles pour écrire de longues descriptions, des informations,
-    de la documentation, etc.
-#&gt;
-
-# Les «&lt;# #&gt;» sont aussi utiles pour mettre des commentaires directement à l'intérieur d'une instruction
-$puissance = [Math]::Pow(10 &lt;#base#&gt;, 2 &lt;#exposant#&gt;)
-```</pre>
 </div>
 
 </div>
