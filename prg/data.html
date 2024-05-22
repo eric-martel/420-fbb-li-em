@@ -9059,7 +9059,7 @@ exports.hljs = hljs;
 <div created="20240507134734599" modified="20240507134734599" title="$:/state/toc/Table des matières-06 PowerShell--249536019">
 <pre>open</pre>
 </div>
-<div created="20240507142337522" modified="20240521121039290" title="$:/state/toc/Table des matières-06 PowerShell-1329480811">
+<div created="20240507142337522" modified="20240522125034694" title="$:/state/toc/Table des matières-06 PowerShell-1329480811">
 <pre>close</pre>
 </div>
 <div created="20240521123444274" modified="20240521183406921" title="$:/state/toc/Table des matières-07 Tests et débogage-1329480811">
@@ -9077,7 +9077,7 @@ exports.hljs = hljs;
 <div created="20240513193510715" modified="20240515160313180" title="$:/state/toc/Table des matières/06 PowerShell-06.06 PowerShell - Boucles-1329480811">
 <pre>open</pre>
 </div>
-<div list="Semainier" title="$:/StoryList">
+<div list="[[06.06.03 PowerShell - Boucles do-while et do-until]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9093,7 +9093,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/prg/data.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9113,7 +9113,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-FBB%20Ini%20prog/420-fbb-li-em%20Notes%20de%20cours/prg/data.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9125,16 +9125,16 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;2560&quot;
+            &quot;text&quot;: &quot;1440&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;960&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240516121935605" title="$:/temp/search">
+<div created="20210822182352824" modified="20240522125126150" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -10983,13 +10983,16 @@ while ($n -ge 0)
 Write-Host &quot;Bonne année!&quot;
 ```</pre>
 </div>
-<div created="20240514130713142" modified="20240514154159235" tags="[[06.06 PowerShell - Boucles]]" title="06.06.03 PowerShell - Boucles do-while et do-until">
+<div created="20240514130713142" modified="20240522125220773" tags="[[06.06 PowerShell - Boucles]]" title="06.06.03 PowerShell - Boucles do-while et do-until">
 <pre>Si la condition d'itération est fausse dès le départ, une boucle ''while'' pourrait ne jamais s'exécuter, ce qui peut être désirable si le contexte est favorable.
 
 Mais parfois, on voudrait être sûr que la boucle s'exécute au moins une fois; dans ce cas, avec un ''while'', il faut s'assurer que la condition d'itération sera vraie dès le départ.
 
 !!! Exemple 6.6.3b -- ''while'' qui s'exécutera au moins une fois
 ```powershell
+# On déclare une variable qui contiendra la valeur saisie
+$ValeurSaisie = &quot;&quot;
+
 # On force la condition d'itération à être vraie
 $EstUnEntier = $false
 
@@ -11025,6 +11028,9 @@ Ainsi, l'exemple 6.6.3b pourra plutôt être réécrit comme ci-dessous.
 
 !!! Exemple 6.6.3c -- Boucle ''do-while''
 ```powershell
+# On déclare une variable qui contiendra la valeur saisie
+$ValeurSaisie = &quot;&quot;
+
 # S'exécute tant que la valeur saisie n'est pas un nombre entier
 do {
     $EstUnEntier = [int]::TryParse((Read-Host &quot;`nEntrez un nombre entier&quot;), [ref]$ValeurSaisie)
@@ -11039,6 +11045,9 @@ Selon le contexte, on pourra préférer utiliser une boucle ''do-until'' (//fais
 
 !!! Exemple 6.6.3d -- Boucle ''do-until''
 ```powershell
+# On déclare une variable qui contiendra la valeur saisie
+$ValeurSaisie = &quot;&quot;
+
 # S'exécute jusqu'à ce que la valeur saisie soit un nombre entier
 do {
     $EstUnEntier = [int]::TryParse((Read-Host &quot;`nEntrez un nombre entier&quot;), [ref]$ValeurSaisie)
