@@ -100,7 +100,7 @@
     background-color: lightgreen;
     font-weight: bolder;
     font-size: 0.8em;
-    font-familiy: sans-serif;
+    font-family: sans-serif;
     border: 1px solid green;
     border-radius: 5px;
     padding: 0 5px;
@@ -110,6 +110,19 @@
  .tc-story-river .tc-subtitle {
     display:none;
  }
+
+ /* Pour rendre tous les tableaux défilables */
+/*.tc-tiddler-body table
+{
+   display:block;
+   overflow:auto;
+}*/
+
+.scrollable {
+   height: 50em;
+   display:block;
+   overflow:auto;
+}
  
  li {
    margin-bottom: 0.5em;
@@ -136,3 +149,22 @@
      white-space: pre;
  }
  
+ /*
+ .tc-tiddler-body table thead {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+ }
+
+ .tc-tiddler-body table tr {
+   color: #212121;
+ }
+ 
+ .tc-tiddler-body table tr:nth-child(odd) {
+   background-color: #7bdde2;
+ }
+
+ .tc-tiddler-body table tr:nth-child(even) {
+   background-color: #79d2aa;
+ }
+ */
